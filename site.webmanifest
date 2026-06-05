@@ -1,0 +1,20 @@
+{
+  "name": "Repair Man",
+  "short_name": "RepairMan",
+  "description": "On-demand roadside mechanic network. Broke down? Get a trusted mechanic to your location in minutes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05050A",
+  "theme_color": "#FFC107",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "categories": ["automotive", "utilities"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

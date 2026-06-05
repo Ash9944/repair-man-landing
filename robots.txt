@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://repairman.in/sitemap.xml

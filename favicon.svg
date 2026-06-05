@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 78">
+  <!-- Outer hex -->
+  <polygon points="34,0 68,19.6 68,58.8 34,78.4 0,58.8 0,19.6" fill="#FFC107"/>
+  <!-- Inner hex depth -->
+  <polygon points="34,8 60,23.5 60,55.3 34,70.8 8,55.3 8,23.5" fill="#FF8F00" opacity="0.45"/>
+  <!-- Wrench -->
+  <g transform="translate(34,41) rotate(-35)">
+    <rect x="-4" y="-22" width="8" height="30" rx="3" fill="#05050A"/>
+    <circle cx="0" cy="-22" r="9" fill="none" stroke="#05050A" stroke-width="5.5"/>
+    <circle cx="0" cy="-22" r="9" fill="none" stroke="#FFC107" stroke-width="2"/>
+    <rect x="-10" y="-26" width="20" height="7" fill="#FF8F00"/>
+    <rect x="-4" y="-26" width="8" height="7" fill="#05050A"/>
+  </g>
+  <!-- Road dashes -->
+  <rect x="15" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
+  <rect x="29" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
+  <rect x="43" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
+</svg>

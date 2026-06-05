@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ Primary SEO ═══════════════════════════════════════════ -->
+  <title>Join as a Partner Mechanic — Repair Man | Coimbatore</title>
+  <meta name="description"
+    content="Register as a partner mechanic on Repair Man and get a steady stream of verified breakdown service requests delivered directly to you in Coimbatore, Tamil Nadu." />
+  <meta name="keywords"
+    content="mechanic jobs Coimbatore, partner mechanic app, earn as mechanic Tamil Nadu, roadside mechanic registration, Repair Man mechanic partner, auto mechanic gig work" />
+  <meta name="author" content="Repair Man" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://repairman.in/mechanic-register.html" />
+
+  <!-- ═══ Geo / Local ══════════════════════════════════════════ -->
+  <meta name="geo.region" content="IN-TN" />
+  <meta name="geo.placename" content="Coimbatore, Tamil Nadu, India" />
+
+  <!-- ═══ Open Graph ═══════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Repair Man" />
+  <meta property="og:title" content="Join as a Partner Mechanic — Repair Man" />
+  <meta property="og:description"
+    content="Get a steady stream of breakdown service requests delivered to you. Register as a Repair Man partner mechanic in Coimbatore today." />
+  <meta property="og:url" content="https://repairman.in/mechanic-register.html" />
+  <meta property="og:image" content="https://repairman.in/og-image.png" />
+  <meta property="og:image:alt" content="Repair Man mechanic partner registration" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:locale:alternate" content="ta_IN" />
+
+  <!-- ═══ Twitter / X Card ════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@repairman_in" />
+  <meta name="twitter:title" content="Join as a Mechanic — Repair Man" />
+  <meta name="twitter:description"
+    content="Register as a partner mechanic and get verified breakdown jobs delivered to you in Coimbatore." />
+  <meta name="twitter:image" content="https://repairman.in/og-image.png" />
+
+  <!-- ═══ Favicon & Icons ══════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate icon" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#FFC107" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Repair Man" />
+
+  <!-- ═══ JSON-LD Structured Data ══════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "JobPosting",
+        "@id": "https://repairman.in/mechanic-register.html#job",
+        "title": "Partner Mechanic",
+        "description": "Join Repair Man as a partner mechanic in Coimbatore. Receive verified vehicle breakdown service requests directly to your phone. Work flexibly and grow your income.",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Repair Man",
+          "sameAs": "https://repairman.in/"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coimbatore",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          }
+        },
+        "employmentType": "CONTRACTOR",
+        "workHours": "Flexible",
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "unitText": "PER_JOB"
+          }
+        },
+        "datePosted": "2026-01-01",
+        "validThrough": "2027-01-01",
+        "occupationalCategory": "49-3023.00"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://repairman.in/mechanic-register.html",
+        "name": "Join as a Partner Mechanic — Repair Man",
+        "description": "Register as a partner mechanic on Repair Man and receive a steady stream of verified breakdown service jobs in Coimbatore.",
+        "url": "https://repairman.in/mechanic-register.html",
+        "isPartOf": { "@id": "https://repairman.in/#business" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://repairman.in/" },
+            { "@type": "ListItem", "position": 2, "name": "Join as a Mechanic", "item": "https://repairman.in/mechanic-register.html" }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══ Fonts ══════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Tamil:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #05050A;
+      --surface:   #0E0E16;
+      --card:      #13131C;
+      --border:    #1C1C28;
+      --primary:   #FFC107;
+      --primary-d: #FF8F00;
+      --primary-l: #FFD54F;
+      --text:      #FFFFFF;
+      --sub:       #7A7A8C;
+      --sublite:   #AAAAAC;
+      --error:     #FF5252;
+      --success:   #4CAF50;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 24px;
+      background: rgba(5,5,10,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
+    .logo svg { display: block; flex-shrink: 0; }
+    .logo-wordmark { display: flex; flex-direction: column; gap: 1px; }
+    .logo-wordmark-main { font-size: 19px; font-weight: 800; color: var(--text); letter-spacing: -0.02em; line-height: 1; }
+    .logo-wordmark-main span { color: var(--primary); }
+    .logo-wordmark-sub { font-size: 9.5px; font-weight: 500; color: var(--sub); letter-spacing: 0.1em; text-transform: uppercase; }
+    .back-link {
+      font-size: 14px; color: var(--sub); text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--text); }
+
+    /* ── PAGE LAYOUT ── */
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .page-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,193,7,0.1);
+      border: 1px solid rgba(255,193,7,0.25);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 12px; font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .page-title {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .page-title span {
+      background: linear-gradient(135deg, var(--primary-l), var(--primary-d));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .page-sub {
+      color: var(--sub);
+      font-size: 1rem;
+      font-family: 'Noto Sans Tamil', sans-serif;
+    }
+
+    /* ── STEPS INDICATOR ── */
+    .steps-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 40px;
+    }
+    .step-dot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .step-dot .dot {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--card);
+      border: 2px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 700;
+      color: var(--sub);
+      transition: all 0.3s;
+    }
+    .step-dot.active .dot {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #000;
+    }
+    .step-dot.done .dot {
+      background: var(--success);
+      border-color: var(--success);
+      color: #fff;
+    }
+    .step-dot .label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--sub);
+      text-align: center;
+      white-space: nowrap;
+    }
+    .step-dot.active .label { color: var(--primary); }
+    .step-dot.done .label { color: var(--success); }
+    .step-line {
+      width: 60px; height: 2px;
+      background: var(--border);
+      margin-bottom: 20px;
+      transition: background 0.3s;
+    }
+    .step-line.done { background: var(--success); }
+
+    /* ── FORM SECTIONS ── */
+    .form-section {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      animation: fadeIn 0.3s ease;
+    }
+    .form-section.active { display: flex; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-heading {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .section-desc {
+      font-size: 14px;
+      color: var(--sub);
+      margin-bottom: 8px;
+    }
+
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--sublite);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .field-label .req { color: var(--primary); margin-left: 2px; }
+
+    .field-input, .field-select {
+      width: 100%;
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--text);
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
+      appearance: none;
+    }
+    .field-input:focus, .field-select:focus { border-color: var(--primary); }
+    .field-input::placeholder { color: var(--sub); }
+    .field-input.invalid { border-color: var(--error); }
+
+    .check-group { display: flex; flex-wrap: wrap; gap: 10px; }
+    .check-pill {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+      user-select: none;
+    }
+    .check-pill:has(input:checked) {
+      border-color: var(--primary);
+      background: rgba(255,193,7,0.08);
+      color: var(--primary);
+    }
+    .check-pill input { accent-color: var(--primary); }
+
+    /* ── TIME RANGE ── */
+    .time-range {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .time-range span { color: var(--sub); font-size: 14px; }
+
+    /* ── MAP ── */
+    #map {
+      width: 100%;
+      height: 360px;
+      border-radius: 14px;
+      border: 1.5px solid var(--border);
+      overflow: hidden;
+    }
+    .map-hint {
+      font-size: 13px;
+      color: var(--sub);
+      margin-top: 8px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .map-hint::before { content: '📍'; }
+    #pin-coords {
+      font-size: 13px;
+      color: var(--sublite);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 14px;
+      margin-top: 8px;
+      display: none;
+    }
+
+    /* ── NAVIGATION BUTTONS ── */
+    .form-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .btn-back {
+      background: transparent;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 13px 24px;
+      color: var(--sublite);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-back:hover { border-color: var(--sublite); color: var(--text); }
+
+    .btn-next {
+      background: linear-gradient(135deg, var(--primary), var(--primary-d));
+      border: none;
+      border-radius: 12px;
+      padding: 13px 32px;
+      color: #000;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      box-shadow: 0 6px 24px rgba(255,193,7,0.3);
+      transition: opacity 0.2s, transform 0.1s;
+    }
+    .btn-next:hover { opacity: 0.9; }
+    .btn-next:active { transform: scale(0.98); }
+    .btn-next:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* ── SUCCESS STATE ── */
+    .success-screen {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 48px 24px;
+      gap: 16px;
+    }
+    .success-screen.active { display: flex; }
+    .success-icon {
+      width: 72px; height: 72px;
+      background: rgba(76,175,80,0.15);
+      border: 2px solid var(--success);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 4px 0;
+    }
+
+    /* ── ERROR MSG ── */
+    .field-error {
+      font-size: 12px;
+      color: var(--error);
+      display: none;
+    }
+    .field-error.show { display: block; }
+
+    @media (max-width: 560px) {
+      .row { grid-template-columns: 1fr; }
+      .step-line { width: 32px; }
+      .page { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">
+      <svg width="33" height="38" viewBox="0 0 68 78" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="34,0 68,19.6 68,58.8 34,78.4 0,58.8 0,19.6" fill="#FFC107"/>
+        <polygon points="34,8 60,23.5 60,55.3 34,70.8 8,55.3 8,23.5" fill="#FF8F00" opacity="0.45"/>
+        <g transform="translate(34,41) rotate(-35)">
+          <rect x="-4" y="-22" width="8" height="30" rx="3" fill="#05050A"/>
+          <circle cx="0" cy="-22" r="9" fill="none" stroke="#05050A" stroke-width="5.5"/>
+          <circle cx="0" cy="-22" r="9" fill="none" stroke="#FFC107" stroke-width="2"/>
+          <rect x="-10" y="-26" width="20" height="7" fill="#FF8F00"/>
+          <rect x="-4" y="-26" width="8" height="7" fill="#05050A"/>
+        </g>
+        <rect x="15" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
+        <rect x="29" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
+        <rect x="43" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
+      </svg>
+      <div class="logo-wordmark">
+        <span class="logo-wordmark-main">REPAIR<span> MAN</span></span>
+        <span class="logo-wordmark-sub">On-road mechanic network</span>
+      </div>
+    </a>
+    <a href="index.html" class="back-link">← Back to home</a>
+  </nav>
+
+  <div class="page">
+
+    <!-- Header -->
+    <div class="page-header">
+      <div class="page-tag">🔧 For Mechanics</div>
+      <h1 class="page-title">Partner with <span>Repair Man</span></h1>
+      <p class="page-sub">உங்க கடைக்கு customers நாங்க கொண்டு வர்றோம் — register பண்ணு!</p>
+    </div>
+
+    <!-- Step indicator -->
+    <div class="steps-indicator" id="stepsIndicator">
+      <div class="step-dot active" id="sdot-1">
+        <div class="dot">1</div>
+        <div class="label">Personal</div>
+      </div>
+      <div class="step-line" id="sline-1"></div>
+      <div class="step-dot" id="sdot-2">
+        <div class="dot">2</div>
+        <div class="label">Shop</div>
+      </div>
+      <div class="step-line" id="sline-2"></div>
+      <div class="step-dot" id="sdot-3">
+        <div class="dot">3</div>
+        <div class="label">Location</div>
+      </div>
+    </div>
+
+    <form id="regForm" novalidate>
+
+      <!-- ── STEP 1: PERSONAL DETAILS ── -->
+      <div class="form-section active" id="step-1">
+        <div>
+          <div class="section-heading">Personal Details</div>
+          <div class="section-desc">Basic info about you as a mechanic.</div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label class="field-label">First Name <span class="req">*</span></label>
+            <input class="field-input" type="text" name="firstName" placeholder="Murugan" required />
+            <span class="field-error" id="err-firstName">Please enter your first name.</span>
+          </div>
+          <div class="field">
+            <label class="field-label">Last Name <span class="req">*</span></label>
+            <input class="field-input" type="text" name="lastName" placeholder="Kumar" required />
+            <span class="field-error" id="err-lastName">Please enter your last name.</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label class="field-label">Mobile Number <span class="req">*</span></label>
+            <input class="field-input" type="tel" name="mobile" placeholder="98765 43210" required pattern="[0-9]{10}" maxlength="10" />
+            <span class="field-error" id="err-mobile">Enter a valid 10-digit mobile number.</span>
+          </div>
+          <div class="field">
+            <label class="field-label">WhatsApp Number</label>
+            <input class="field-input" type="tel" name="whatsapp" placeholder="Same as mobile (optional)" maxlength="10" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label class="field-label">Years of Experience</label>
+            <input class="field-input" type="number" name="experience" placeholder="e.g. 8" min="0" max="50" />
+          </div>
+          <div class="field">
+            <label class="field-label">Area in Coimbatore <span class="req">*</span></label>
+            <input class="field-input" type="text" name="area" placeholder="e.g. Gandhipuram" required />
+            <span class="field-error" id="err-area">Please enter your area.</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Vehicle Types You Handle <span class="req">*</span></label>
+          <div class="check-group">
+            <label class="check-pill"><input type="checkbox" name="vehicleTypes" value="2-wheeler" /> 2-Wheeler</label>
+            <label class="check-pill"><input type="checkbox" name="vehicleTypes" value="4-wheeler" /> 4-Wheeler</label>
+            <label class="check-pill"><input type="checkbox" name="vehicleTypes" value="heavy" /> Heavy Vehicles</label>
+          </div>
+          <span class="field-error" id="err-vehicleTypes">Select at least one vehicle type.</span>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Specialization</label>
+          <div class="check-group">
+            <label class="check-pill"><input type="checkbox" name="specializations" value="general" /> General Repair</label>
+            <label class="check-pill"><input type="checkbox" name="specializations" value="electrical" /> Electrical</label>
+            <label class="check-pill"><input type="checkbox" name="specializations" value="ac" /> AC</label>
+            <label class="check-pill"><input type="checkbox" name="specializations" value="tyres" /> Tyres / Puncture</label>
+            <label class="check-pill"><input type="checkbox" name="specializations" value="bodywork" /> Body Work</label>
+            <label class="check-pill"><input type="checkbox" name="specializations" value="towing" /> Towing</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="check-pill" style="width:fit-content;border-radius:10px;padding:12px 18px;">
+            <input type="checkbox" name="hasOwnTools" />
+            I have my own tools & equipment
+          </label>
+        </div>
+
+        <div class="form-nav">
+          <span></span>
+          <button type="button" class="btn-next" onclick="goToStep(2)">Next: Shop Details →</button>
+        </div>
+      </div>
+
+      <!-- ── STEP 2: SHOP DETAILS ── -->
+      <div class="form-section" id="step-2">
+        <div>
+          <div class="section-heading">Shop Details</div>
+          <div class="section-desc">Tell us about your workshop or garage.</div>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Shop / Garage Name <span class="req">*</span></label>
+          <input class="field-input" type="text" name="shopName" placeholder="e.g. Kumar Auto Works" required />
+          <span class="field-error" id="err-shopName">Please enter your shop name.</span>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Shop Address <span class="req">*</span></label>
+          <input class="field-input" type="text" name="shopAddress" placeholder="Street, landmark, area" required />
+          <span class="field-error" id="err-shopAddress">Please enter the shop address.</span>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Working Hours</label>
+          <div class="time-range">
+            <input class="field-input" type="time" name="workingHoursFrom" value="08:00" style="flex:1;" />
+            <span>to</span>
+            <input class="field-input" type="time" name="workingHoursTo" value="20:00" style="flex:1;" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Type of Workshop</label>
+          <div class="check-group">
+            <label class="check-pill"><input type="radio" name="workshopType" value="roadside" /> Roadside / Mobile</label>
+            <label class="check-pill"><input type="radio" name="workshopType" value="garage" checked /> Fixed Garage</label>
+            <label class="check-pill"><input type="radio" name="workshopType" value="doorstep" /> Doorstep Service</label>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn-back" onclick="goToStep(1)">← Back</button>
+          <button type="button" class="btn-next" onclick="goToStep(3)">Next: Set Location →</button>
+        </div>
+      </div>
+
+      <!-- ── STEP 3: LOCATION ── -->
+      <div class="form-section" id="step-3">
+        <div>
+          <div class="section-heading">Shop Location</div>
+          <div class="section-desc">Drop a pin on your shop so customers can find you easily.</div>
+        </div>
+
+        <div id="map"></div>
+        <p class="map-hint">Click anywhere on the map to drop your pin</p>
+        <div id="pin-coords"></div>
+
+        <input type="hidden" name="lat" id="latInput" />
+        <input type="hidden" name="lng" id="lngInput" />
+        <span class="field-error" id="err-location">Please drop a pin on your shop location.</span>
+
+        <div class="form-nav">
+          <button type="button" class="btn-back" onclick="goToStep(2)">← Back</button>
+          <button type="button" class="btn-next" id="submitBtn" onclick="submitForm()">
+            Submit Registration ✓
+          </button>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- ── SUCCESS ── -->
+    <div class="success-screen" id="successScreen">
+      <div class="success-icon">✅</div>
+      <h2 style="font-size:1.6rem;font-weight:800;">You're registered!</h2>
+      <p style="color:var(--sub);max-width:400px;">
+        நாங்க உங்களை விரைவில் தொடர்பு கொள்கிறோம். Our team will reach out to you within 24 hours.
+      </p>
+      <a href="index.html" class="btn-next" style="text-decoration:none;margin-top:8px;">← Back to Home</a>
+    </div>
+
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const API_BASE = 'http://localhost:3000'; // TODO: replace with prod URL
+
+    // ── STEP NAVIGATION ──
+    let currentStep = 1;
+    const totalSteps = 3;
+
+    function goToStep(n) {
+      if (n > currentStep && !validateStep(currentStep)) return;
+
+      document.getElementById(`step-${currentStep}`).classList.remove('active');
+      currentStep = n;
+      document.getElementById(`step-${currentStep}`).classList.add('active');
+      updateStepIndicator();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (n === 3) initMap();
+    }
+
+    function updateStepIndicator() {
+      for (let i = 1; i <= totalSteps; i++) {
+        const dot = document.getElementById(`sdot-${i}`);
+        dot.classList.remove('active', 'done');
+        if (i < currentStep) dot.classList.add('done');
+        else if (i === currentStep) dot.classList.add('active');
+      }
+      for (let i = 1; i < totalSteps; i++) {
+        const line = document.getElementById(`sline-${i}`);
+        line.classList.toggle('done', i < currentStep);
+      }
+    }
+
+    // ── VALIDATION ──
+    function validateStep(step) {
+      let valid = true;
+
+      if (step === 1) {
+        const fields = ['firstName', 'lastName', 'mobile', 'area'];
+        fields.forEach(name => {
+          const el = document.querySelector(`[name="${name}"]`);
+          const err = document.getElementById(`err-${name}`);
+          if (!el.value.trim() || (name === 'mobile' && !/^[0-9]{10}$/.test(el.value.trim()))) {
+            el.classList.add('invalid');
+            if (err) err.classList.add('show');
+            valid = false;
+          } else {
+            el.classList.remove('invalid');
+            if (err) err.classList.remove('show');
+          }
+        });
+        const vehicles = document.querySelectorAll('[name="vehicleTypes"]:checked');
+        const vErr = document.getElementById('err-vehicleTypes');
+        if (!vehicles.length) {
+          vErr.classList.add('show');
+          valid = false;
+        } else {
+          vErr.classList.remove('show');
+        }
+      }
+
+      if (step === 2) {
+        ['shopName', 'shopAddress'].forEach(name => {
+          const el = document.querySelector(`[name="${name}"]`);
+          const err = document.getElementById(`err-${name}`);
+          if (!el.value.trim()) {
+            el.classList.add('invalid');
+            if (err) err.classList.add('show');
+            valid = false;
+          } else {
+            el.classList.remove('invalid');
+            if (err) err.classList.remove('show');
+          }
+        });
+      }
+
+      return valid;
+    }
+
+    // ── MAP ──
+    let map = null;
+    let marker = null;
+
+    function initMap() {
+      if (map) return;
+      // Default center: Coimbatore
+      map = L.map('map').setView([11.0168, 76.9558], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors',
+        maxZoom: 19,
+      }).addTo(map);
+
+      const pinIcon = L.divIcon({
+        html: `<div style="background:linear-gradient(135deg,#FFC107,#FF8F00);width:32px;height:32px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 4px 12px rgba(255,193,7,0.5);"></div>`,
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        className: '',
+      });
+
+      map.on('click', function (e) {
+        const { lat, lng } = e.latlng;
+        if (marker) marker.remove();
+        marker = L.marker([lat, lng], { icon: pinIcon }).addTo(map);
+        document.getElementById('latInput').value = lat.toFixed(6);
+        document.getElementById('lngInput').value = lng.toFixed(6);
+        const coordsEl = document.getElementById('pin-coords');
+        coordsEl.style.display = 'block';
+        coordsEl.textContent = `📍 Pinned at ${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+        document.getElementById('err-location').classList.remove('show');
+      });
+    }
+
+    // ── SUBMIT ──
+    async function submitForm() {
+      if (!validateStep(2)) { goToStep(2); return; }
+
+      const lat = document.getElementById('latInput').value;
+      const lng = document.getElementById('lngInput').value;
+      if (!lat || !lng) {
+        document.getElementById('err-location').classList.add('show');
+        return;
+      }
+
+      const form = document.getElementById('regForm');
+      const btn = document.getElementById('submitBtn');
+
+      const vehicleTypes = [...form.querySelectorAll('[name="vehicleTypes"]:checked')].map(el => el.value);
+      const specializations = [...form.querySelectorAll('[name="specializations"]:checked')].map(el => el.value);
+      const workshopType = form.querySelector('[name="workshopType"]:checked')?.value;
+
+      const payload = {
+        firstName:        form.firstName.value.trim(),
+        lastName:         form.lastName.value.trim(),
+        mobile:           form.mobile.value.trim(),
+        area:             form.area.value.trim(),
+        experience:       form.experience.value ? Number(form.experience.value) : undefined,
+        vehicleTypes,
+        specializations,
+        hasOwnTools:      form.hasOwnTools.checked,
+        shopName:         form.shopName.value.trim(),
+        shopAddress:      form.shopAddress.value.trim(),
+        workingHoursFrom: form.workingHoursFrom.value,
+        workingHoursTo:   form.workingHoursTo.value,
+        workshopType,
+        lat:  parseFloat(lat),
+        lng:  parseFloat(lng),
+      };
+
+      btn.disabled = true;
+      btn.textContent = 'Submitting...';
+
+      try {
+        const res = await fetch(`${API_BASE}/mechanic-leads/register`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+        if (res.ok) {
+          document.getElementById('regForm').style.display = 'none';
+          document.getElementById('stepsIndicator').style.display = 'none';
+          document.getElementById('successScreen').classList.add('active');
+        } else {
+          alert(data.message || 'Something went wrong. Please try again.');
+          btn.disabled = false;
+          btn.textContent = 'Submit Registration ✓';
+        }
+      } catch (err) {
+        alert('Could not connect to server. Please try again later.');
+        btn.disabled = false;
+        btn.textContent = 'Submit Registration ✓';
+      }
+    }
+  </script>
+</body>
+</html>

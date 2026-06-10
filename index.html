@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ═══ Primary SEO ═══════════════════════════════════════════ -->
   <title>Repair Man — Roadside Mechanic, Right When You Need It | Coimbatore</title>
-  <meta name="description" content="Broke down in Coimbatore? Repair Man connects you with trusted, verified mechanics in minutes — 24/7, across Coimbatore and Tamil Nadu. Request a mechanic from your phone instantly." />
-  <meta name="keywords" content="roadside mechanic Coimbatore, emergency car repair Coimbatore, on-demand mechanic Tamil Nadu, mobile mechanic, vehicle breakdown service, 24/7 auto repair, motorcycle repair Coimbatore, car mechanic near me, Repair Man app" />
+  <meta name="description"
+    content="Broke down in Coimbatore? Repair Man connects you with trusted, verified mechanics in minutes — 24/7, across Coimbatore and Tamil Nadu. Request a mechanic from your phone instantly." />
+  <meta name="keywords"
+    content="roadside mechanic Coimbatore, emergency car repair Coimbatore, on-demand mechanic Tamil Nadu, mobile mechanic, vehicle breakdown service, 24/7 auto repair, motorcycle repair Coimbatore, car mechanic near me, Repair Man app" />
   <meta name="author" content="Repair Man" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://repairman.in/" />
@@ -22,7 +25,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Repair Man" />
   <meta property="og:title" content="Repair Man — Mechanic at Your Doorstep, Coimbatore" />
-  <meta property="og:description" content="Broke down in Coimbatore? Get a trusted mechanic to your exact location in minutes. Available 24/7 for all vehicles." />
+  <meta property="og:description"
+    content="Broke down in Coimbatore? Get a trusted mechanic to your exact location in minutes. Available 24/7 for all vehicles." />
   <meta property="og:url" content="https://repairman.in/" />
   <meta property="og:image" content="https://repairman.in/og-image.png" />
   <meta property="og:image:width" content="1200" />
@@ -36,7 +40,8 @@
   <meta name="twitter:site" content="@repairman_in" />
   <meta name="twitter:creator" content="@repairman_in" />
   <meta name="twitter:title" content="Repair Man — Mechanic at Your Doorstep" />
-  <meta name="twitter:description" content="Broke down? Get a verified mechanic to your location in minutes. Available 24/7 across Coimbatore, Tamil Nadu." />
+  <meta name="twitter:description"
+    content="Broke down? Get a verified mechanic to your location in minutes. Available 24/7 across Coimbatore, Tamil Nadu." />
   <meta name="twitter:image" content="https://repairman.in/og-image.png" />
   <meta name="twitter:image:alt" content="Repair Man app screenshot" />
 
@@ -96,28 +101,38 @@
   <!-- ═══ Fonts ══════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --g:    #FFC107;
-      --gb:   #FFD54F;
-      --gd:   #FF8F00;
-      --glow: rgba(255,193,7,0.35);
-      --glow2:rgba(255,193,7,0.12);
-      --black:#05050A;
-      --s1:   #0A0910;
-      --s2:   #0E0D16;
-      --s3:   #13121C;
-      --text: #F5EDD8;
-      --muted:#6B6070;
-      --dim:  #38323A;
-      --border: rgba(255,193,7,0.15);
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    html { scroll-behavior: smooth; }
+    :root {
+      --g: #FFC107;
+      --gb: #FFD54F;
+      --gd: #FF8F00;
+      --glow: rgba(255, 193, 7, 0.35);
+      --glow2: rgba(255, 193, 7, 0.12);
+      --black: #05050A;
+      --s1: #0A0910;
+      --s2: #0E0D16;
+      --s3: #13121C;
+      --text: #F5EDD8;
+      --muted: #6B6070;
+      --dim: #38323A;
+      --border: rgba(255, 193, 7, 0.15);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
@@ -130,762 +145,1661 @@
     /* ── NOISE OVERLAY ── */
     body::before {
       content: '';
-      position: fixed; inset: 0;
+      position: fixed;
+      inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
       background-size: 200px 200px;
-      pointer-events: none; z-index: 0; opacity: 0.35;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
     }
 
     /* ── NAV ── */
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       padding: 18px 56px;
-      background: rgba(5,5,10,0.88);
+      background: rgba(5, 5, 10, 0.88);
       backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
     }
 
-    .logo { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
-    .logo svg { display: block; flex-shrink: 0; }
-    .logo-wordmark { display: flex; flex-direction: column; gap: 1px; }
-    .logo-wordmark-main { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: var(--text); line-height: 1; }
-    .logo-wordmark-main span { color: var(--g); }
-    .logo-wordmark-sub { font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+    }
 
-    .nav-links { display: flex; align-items: center; gap: 40px; }
-    .nav-links a {
-      text-decoration: none; color: var(--muted);
+    .logo svg {
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .logo-wordmark {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .logo-wordmark-main {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .logo-wordmark-main span {
+      color: var(--g);
+    }
+
+    .logo-wordmark-sub {
       font-family: 'Space Mono', monospace;
-      font-size: 11px; font-weight: 400; letter-spacing: 1.5px; text-transform: uppercase;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--g); }
+
+    .nav-links a:hover {
+      color: var(--g);
+    }
 
     .nav-cta {
       font-family: 'Space Mono', monospace;
-      background: transparent; color: var(--g);
+      background: transparent;
+      color: var(--g);
       border: 1px solid var(--g);
-      padding: 10px 24px; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
-      cursor: pointer; text-decoration: none;
+      padding: 10px 24px;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
       clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
       transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     }
-    .nav-cta:hover { background: var(--g); color: #05050A; box-shadow: 0 0 20px var(--glow); }
+
+    .nav-cta:hover {
+      background: var(--g);
+      color: #05050A;
+      box-shadow: 0 0 20px var(--glow);
+    }
 
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
-      display: grid; grid-template-columns: 1fr 1fr;
-      align-items: center; position: relative; overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
     }
+
     .hero::after {
       content: '';
-      position: absolute; top: 0; right: 42%; bottom: 0;
+      position: absolute;
+      top: 0;
+      right: 42%;
+      bottom: 0;
       width: 1px;
       background: linear-gradient(180deg, transparent, var(--g), transparent);
       opacity: 0.25;
     }
 
-    .hero-left { padding: 160px 56px 100px; position: relative; z-index: 1; }
+    .hero-left {
+      padding: 160px 56px 100px;
+      position: relative;
+      z-index: 1;
+    }
 
     .hero-eyebrow {
       font-family: 'Space Mono', monospace;
-      font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-      color: var(--g); display: flex; align-items: center; gap: 12px;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--g);
+      display: flex;
+      align-items: center;
+      gap: 12px;
       margin-bottom: 32px;
     }
-    .hero-eyebrow::before { content: ''; display: block; width: 40px; height: 1px; background: var(--g); }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--g);
+    }
 
     .hero h1 {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(68px, 9vw, 120px);
-      line-height: 0.9; letter-spacing: 2px; color: #F5EDD8;
+      line-height: 0.9;
+      letter-spacing: 2px;
+      color: #F5EDD8;
       margin-bottom: 8px;
     }
+
     .hero h1 .gold-line {
       color: var(--gb);
-      text-shadow: 0 0 60px rgba(255,193,7,0.4), 0 0 120px rgba(255,193,7,0.15);
+      text-shadow: 0 0 60px rgba(255, 193, 7, 0.4), 0 0 120px rgba(255, 193, 7, 0.15);
       display: block;
     }
 
     .hero-tagline {
       font-family: 'Space Mono', monospace;
-      font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
-      color: var(--muted); margin-bottom: 40px; margin-top: 20px;
-    }
-    .hero-desc {
-      font-size: 16px; font-weight: 300; color: var(--muted);
-      line-height: 1.75; max-width: 400px; margin-bottom: 48px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 40px;
+      margin-top: 20px;
     }
 
-    .hero-btns { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+    .hero-desc {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 400px;
+      margin-bottom: 48px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
     .btn-main {
-      display: inline-flex; align-items: center; gap: 12px;
-      background: var(--g); color: #05050A;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--g);
+      color: #05050A;
       padding: 16px 36px;
       font-family: 'Space Mono', monospace;
-      font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700;
-      text-decoration: none; border: none; cursor: pointer;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
       clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
       transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
       box-shadow: 0 0 30px var(--glow);
     }
-    .btn-main:hover { background: var(--gb); box-shadow: 0 0 50px rgba(255,193,7,0.5); transform: translateY(-2px); }
+
+    .btn-main:hover {
+      background: var(--gb);
+      box-shadow: 0 0 50px rgba(255, 193, 7, 0.5);
+      transform: translateY(-2px);
+    }
 
     .btn-ghost {
-      display: inline-flex; align-items: center; gap: 8px;
-      color: var(--muted); font-size: 13px;
-      text-decoration: none; padding: 16px 0;
-      transition: color 0.2s; font-family: 'Inter', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      text-decoration: none;
+      padding: 16px 0;
+      transition: color 0.2s;
+      font-family: 'Inter', sans-serif;
     }
-    .btn-ghost:hover { color: var(--gb); }
+
+    .btn-ghost:hover {
+      color: var(--gb);
+    }
 
     .hero-stats {
-      display: flex; gap: 0; margin-top: 60px;
+      display: flex;
+      gap: 0;
+      margin-top: 60px;
       border: 1px solid var(--border);
       border-left: 3px solid var(--g);
     }
-    .stat { flex: 1; padding: 20px 24px; border-right: 1px solid var(--border); }
-    .stat:last-child { border-right: none; }
+
+    .stat {
+      flex: 1;
+      padding: 20px 24px;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat:last-child {
+      border-right: none;
+    }
+
     .stat-n {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 36px; letter-spacing: 1px; color: var(--gb); line-height: 1;
-      text-shadow: 0 0 20px rgba(255,193,7,0.3);
+      font-size: 36px;
+      letter-spacing: 1px;
+      color: var(--gb);
+      line-height: 1;
+      text-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
     }
+
     .stat-l {
       font-family: 'Space Mono', monospace;
-      font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase;
-      color: var(--dim); margin-top: 4px;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-top: 4px;
     }
 
     /* ── HERO RIGHT ── */
     .hero-right {
-      position: relative; display: flex; align-items: center; justify-content: center;
-      padding: 160px 56px 100px; overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 160px 56px 100px;
+      overflow: hidden;
     }
+
     .hero-right::before {
-      content: ''; position: absolute;
-      width: 420px; height: 420px;
-      background: radial-gradient(circle, rgba(255,193,7,0.1) 0%, transparent 70%);
-      border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      content: '';
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       animation: pulse-orb 3s ease-in-out infinite;
     }
-    @keyframes pulse-orb { 0%,100%{opacity:0.5;transform:translate(-50%,-50%) scale(1);}50%{opacity:1;transform:translate(-50%,-50%) scale(1.12);} }
+
+    @keyframes pulse-orb {
+
+      0%,
+      100% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.12);
+      }
+    }
 
     .phone {
       width: 255px;
       background: #05050A;
-      border: 1px solid rgba(255,193,7,0.3);
-      border-radius: 36px; padding: 14px;
-      position: relative; z-index: 2;
-      box-shadow: 0 0 0 1px rgba(255,193,7,0.06), 0 40px 80px rgba(0,0,0,0.8), 0 0 60px rgba(255,193,7,0.07);
+      border: 1px solid rgba(255, 193, 7, 0.3);
+      border-radius: 36px;
+      padding: 14px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 0 1px rgba(255, 193, 7, 0.06), 0 40px 80px rgba(0, 0, 0, 0.8), 0 0 60px rgba(255, 193, 7, 0.07);
       animation: levitate 5s ease-in-out infinite;
     }
-    @keyframes levitate { 0%,100%{transform:translateY(0) rotateY(-4deg);}50%{transform:translateY(-14px) rotateY(-4deg);} }
 
-    .phone-inner { background: #0A0910; border-radius: 26px; overflow: hidden; aspect-ratio: 9/19; }
-    .phone-bar {
-      background: var(--g); padding: 13px 18px 10px;
-      display: flex; justify-content: space-between; align-items: center;
+    @keyframes levitate {
+
+      0%,
+      100% {
+        transform: translateY(0) rotateY(-4deg);
+      }
+
+      50% {
+        transform: translateY(-14px) rotateY(-4deg);
+      }
     }
-    .phone-bar span { color: #05050A; font-size: 10px; font-weight: 700; font-family: 'Space Mono', monospace; letter-spacing: 1px; }
-    .phone-map { height: 200px; background: #0C0B14; position: relative; overflow: hidden; }
+
+    .phone-inner {
+      background: #0A0910;
+      border-radius: 26px;
+      overflow: hidden;
+      aspect-ratio: 9/19;
+    }
+
+    .phone-bar {
+      background: var(--g);
+      padding: 13px 18px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .phone-bar span {
+      color: #05050A;
+      font-size: 10px;
+      font-weight: 700;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 1px;
+    }
+
+    .phone-map {
+      height: 200px;
+      background: #0C0B14;
+      position: relative;
+      overflow: hidden;
+    }
+
     .phone-grid {
-      position: absolute; inset: 0;
-      background-image: linear-gradient(rgba(255,193,7,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,193,7,0.05) 1px, transparent 1px);
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 193, 7, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 193, 7, 0.05) 1px, transparent 1px);
       background-size: 26px 26px;
     }
-    .road-h { position: absolute; top: 50%; left: 0; right: 0; height: 11px; background: #18161F; transform: translateY(-50%); border-top: 1px solid rgba(255,193,7,0.08); border-bottom: 1px solid rgba(255,193,7,0.08); }
-    .road-v { position: absolute; left: 42%; top: 0; bottom: 0; width: 11px; background: #18161F; border-left: 1px solid rgba(255,193,7,0.08); border-right: 1px solid rgba(255,193,7,0.08); }
-    .pin { position: absolute; top: 48%; left: 42%; transform: translate(-50%, -100%); z-index: 2; }
+
+    .road-h {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 11px;
+      background: #18161F;
+      transform: translateY(-50%);
+      border-top: 1px solid rgba(255, 193, 7, 0.08);
+      border-bottom: 1px solid rgba(255, 193, 7, 0.08);
+    }
+
+    .road-v {
+      position: absolute;
+      left: 42%;
+      top: 0;
+      bottom: 0;
+      width: 11px;
+      background: #18161F;
+      border-left: 1px solid rgba(255, 193, 7, 0.08);
+      border-right: 1px solid rgba(255, 193, 7, 0.08);
+    }
+
+    .pin {
+      position: absolute;
+      top: 48%;
+      left: 42%;
+      transform: translate(-50%, -100%);
+      z-index: 2;
+    }
+
     .pin-body {
-      width: 30px; height: 30px; background: var(--g);
-      border-radius: 50% 50% 50% 0; transform: rotate(-45deg);
-      box-shadow: 0 0 20px rgba(255,193,7,0.6), 0 0 40px rgba(255,193,7,0.2);
+      width: 30px;
+      height: 30px;
+      background: var(--g);
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.6), 0 0 40px rgba(255, 193, 7, 0.2);
       animation: pin-bob 2s ease-in-out infinite;
     }
-    @keyframes pin-bob { 0%,100%{transform:rotate(-45deg);}50%{transform:rotate(-45deg) translateY(-5px);} }
-    .pin-body svg { transform: rotate(45deg); width: 13px; height: 13px; stroke: #05050A; fill: none; stroke-width: 2.5; margin: 8.5px auto; display: block; }
+
+    @keyframes pin-bob {
+
+      0%,
+      100% {
+        transform: rotate(-45deg);
+      }
+
+      50% {
+        transform: rotate(-45deg) translateY(-5px);
+      }
+    }
+
+    .pin-body svg {
+      transform: rotate(45deg);
+      width: 20px;
+      height: 29px;
+      stroke: #05050A;
+      fill: none;
+      stroke-width: 2.5;
+      margin: 8.5px auto;
+      display: block;
+    }
+
     .radar {
-      position: absolute; top: 48%; left: 42%;
-      width: 68px; height: 68px; border: 1.5px solid rgba(255,193,7,0.4);
-      border-radius: 50%; transform: translate(-50%, -50%);
+      position: absolute;
+      top: 48%;
+      left: 42%;
+      width: 68px;
+      height: 68px;
+      border: 1.5px solid rgba(255, 193, 7, 0.4);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
       animation: radar-pulse 2s ease-out infinite;
     }
-    @keyframes radar-pulse { 0%{opacity:0.8;transform:translate(-50%,-50%) scale(0.4);}100%{opacity:0;transform:translate(-50%,-50%) scale(2.2);} }
+
+    @keyframes radar-pulse {
+      0% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(0.4);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2.2);
+      }
+    }
+
     .mech-dot {
-      position: absolute; top: 35%; left: 63%;
-      width: 24px; height: 24px; background: #1A3A2A; border-radius: 50%;
-      border: 1.5px solid rgba(255,193,7,0.3);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 9px; font-weight: 700; color: #60C080;
+      position: absolute;
+      top: 35%;
+      left: 63%;
+      width: 24px;
+      height: 24px;
+      background: #1A3A2A;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255, 193, 7, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      font-weight: 700;
+      color: #60C080;
       font-family: 'Space Mono', monospace;
     }
-    .phone-body { padding: 13px; }
+
+    .phone-body {
+      padding: 13px;
+    }
+
     .p-card {
-      background: #0F0E18; border: 1px solid rgba(255,193,7,0.1);
-      border-radius: 13px; padding: 11px; margin-bottom: 9px;
+      background: #0F0E18;
+      border: 1px solid rgba(255, 193, 7, 0.1);
+      border-radius: 13px;
+      padding: 11px;
+      margin-bottom: 9px;
     }
-    .p-card-row { display: flex; align-items: center; gap: 9px; margin-bottom: 8px; }
+
+    .p-card-row {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 8px;
+    }
+
     .p-avatar {
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--g); display: flex; align-items: center; justify-content: center;
-      font-family: 'Bebas Neue', sans-serif; font-size: 13px; color: #05050A; flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--g);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      color: #05050A;
+      flex-shrink: 0;
     }
-    .p-name { font-size: 11px; font-weight: 600; color: #E0D5B5; }
-    .p-sub { font-size: 9px; color: var(--dim); }
+
+    .p-name {
+      font-size: 11px;
+      font-weight: 600;
+      color: #E0D5B5;
+    }
+
+    .p-sub {
+      font-size: 9px;
+      color: var(--dim);
+    }
+
     .p-eta {
       margin-left: auto;
-      background: rgba(255,193,7,0.1); border: 1px solid rgba(255,193,7,0.2);
-      color: var(--gb); font-size: 9px; font-weight: 700;
-      padding: 2px 8px; border-radius: 4px;
-      font-family: 'Space Mono', monospace; white-space: nowrap;
-    }
-    .p-pills { display: flex; gap: 5px; }
-    .p-pill { background: rgba(255,193,7,0.05); border: 1px solid rgba(255,193,7,0.1); border-radius: 3px; padding: 2px 7px; font-size: 8px; color: var(--muted); font-family: 'Space Mono', monospace; }
-    .p-btn { background: var(--g); color: #05050A; border: none; padding: 9px; border-radius: 8px; width: 100%; font-size: 10px; font-weight: 700; cursor: pointer; font-family: 'Space Mono', monospace; letter-spacing: 1px; }
-
-    .badge {
-      position: absolute; z-index: 3;
-      background: #0A0910; border: 1px solid rgba(255,193,7,0.22);
-      border-radius: 12px; padding: 12px 16px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 20px rgba(255,193,7,0.04);
+      background: rgba(255, 193, 7, 0.1);
+      border: 1px solid rgba(255, 193, 7, 0.2);
+      color: var(--gb);
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'Space Mono', monospace;
       white-space: nowrap;
     }
-    .badge-label { font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--dim); margin-bottom: 4px; }
-    .badge-val { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; color: var(--gb); line-height: 1; text-shadow: 0 0 20px rgba(255,193,7,0.3); }
-    .badge-sub { font-size: 10px; color: var(--g); margin-top: 2px; }
-    .b1 { top: 18%; right: -4%; animation: fl1 6s ease-in-out infinite; }
-    .b2 { bottom: 18%; left: -7%; animation: fl2 5s 0.5s ease-in-out infinite; }
-    @keyframes fl1 { 0%,100%{transform:translateY(0) rotate(2deg);}50%{transform:translateY(-10px) rotate(2deg);} }
-    @keyframes fl2 { 0%,100%{transform:translateY(0) rotate(-2deg);}50%{transform:translateY(8px) rotate(-2deg);} }
+
+    .p-pills {
+      display: flex;
+      gap: 5px;
+    }
+
+    .p-pill {
+      background: rgba(255, 193, 7, 0.05);
+      border: 1px solid rgba(255, 193, 7, 0.1);
+      border-radius: 3px;
+      padding: 2px 7px;
+      font-size: 8px;
+      color: var(--muted);
+      font-family: 'Space Mono', monospace;
+    }
+
+    .p-btn {
+      background: var(--g);
+      color: #05050A;
+      border: none;
+      padding: 9px;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 1px;
+    }
+
+    .badge {
+      position: absolute;
+      z-index: 3;
+      background: #0A0910;
+      border: 1px solid rgba(255, 193, 7, 0.22);
+      border-radius: 12px;
+      padding: 12px 16px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 193, 7, 0.04);
+      white-space: nowrap;
+    }
+
+    .badge-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 4px;
+    }
+
+    .badge-val {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 1px;
+      color: var(--gb);
+      line-height: 1;
+      text-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+    }
+
+    .badge-sub {
+      font-size: 10px;
+      color: var(--g);
+      margin-top: 2px;
+    }
+
+    .b1 {
+      top: 18%;
+      right: -1%;
+      animation: fl1 6s ease-in-out infinite;
+    }
+
+    .b2 {
+      bottom: 18%;
+      left: -1%;
+      animation: fl2 5s 0.5s ease-in-out infinite;
+    }
+
+    @keyframes fl1 {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(2deg);
+      }
+
+      50% {
+        transform: translateY(-10px) rotate(2deg);
+      }
+    }
+
+    @keyframes fl2 {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(-2deg);
+      }
+
+      50% {
+        transform: translateY(8px) rotate(-2deg);
+      }
+    }
 
     /* ── TICKER ── */
     .ticker {
-      background: var(--g); padding: 11px 0;
-      overflow: hidden; white-space: nowrap;
-      border-top: 1px solid rgba(255,193,7,0.3);
-      border-bottom: 1px solid rgba(255,193,7,0.3);
+      background: var(--g);
+      padding: 11px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      border-top: 1px solid rgba(255, 193, 7, 0.3);
+      border-bottom: 1px solid rgba(255, 193, 7, 0.3);
     }
-    .ticker-track { display: inline-flex; gap: 0; animation: ticker 22s linear infinite; }
+
+    .ticker-track {
+      display: inline-flex;
+      gap: 0;
+      animation: ticker 22s linear infinite;
+    }
+
     .ticker-item {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 15px; letter-spacing: 3px;
-      color: #05050A; padding: 0 48px;
-      display: flex; align-items: center; gap: 16px;
+      font-size: 15px;
+      letter-spacing: 3px;
+      color: #05050A;
+      padding: 0 48px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
-    .ticker-dot { width: 5px; height: 5px; border-radius: 50%; background: #05050A; opacity: 0.35; }
-    @keyframes ticker { 0%{transform:translateX(0);}100%{transform:translateX(-50%);} }
+
+    .ticker-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #05050A;
+      opacity: 0.35;
+    }
+
+    @keyframes ticker {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
     /* ── SECTIONS ── */
-    section { padding: 120px 56px; position: relative; }
-    .inner { max-width: 1280px; margin: 0 auto; }
+    section {
+      padding: 120px 56px;
+      position: relative;
+    }
+
+    .inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
 
     .section-label {
       font-family: 'Space Mono', monospace;
-      font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
-      color: var(--g); margin-bottom: 20px;
-      display: flex; align-items: center; gap: 12px;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--g);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
-    .section-label::after { content: ''; display: block; width: 40px; height: 1px; background: var(--g); }
+
+    .section-label::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--g);
+    }
 
     h2 {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(48px, 6vw, 82px);
-      letter-spacing: 2px; line-height: 0.93;
-      color: #F5EDD8; margin-bottom: 20px;
+      letter-spacing: 2px;
+      line-height: 0.93;
+      color: #F5EDD8;
+      margin-bottom: 20px;
     }
-    h2 .g { color: var(--gb); text-shadow: 0 0 40px rgba(255,193,7,0.25); }
-    .sub { font-size: 16px; color: var(--muted); font-weight: 300; max-width: 480px; line-height: 1.75; }
+
+    h2 .g {
+      color: var(--gb);
+      text-shadow: 0 0 40px rgba(255, 193, 7, 0.25);
+    }
+
+    .sub {
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 480px;
+      line-height: 1.75;
+    }
 
     /* ── STEPS ── */
     .steps {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 0; margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 80px;
       border: 1px solid var(--border);
       border-left: 3px solid var(--g);
     }
-    .step { padding: 40px 32px; border-right: 1px solid var(--border); position: relative; transition: background 0.3s; }
-    .step:last-child { border-right: none; }
-    .step:hover { background: rgba(255,193,7,0.02); }
-    .step::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--g), transparent); opacity: 0; transition: opacity 0.3s; }
-    .step:hover::before { opacity: 1; }
-    .step-n { font-family: 'Bebas Neue', sans-serif; font-size: 64px; letter-spacing: 2px; color: rgba(255,193,7,0.07); line-height: 1; margin-bottom: 20px; }
-    .step h3 { font-family: 'Bebas Neue', sans-serif; font-size: 21px; letter-spacing: 1px; color: #D5C898; margin-bottom: 10px; }
-    .step p { font-size: 13px; color: var(--dim); line-height: 1.75; }
+
+    .step {
+      padding: 40px 32px;
+      border-right: 1px solid var(--border);
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .step:last-child {
+      border-right: none;
+    }
+
+    .step:hover {
+      background: rgba(255, 193, 7, 0.02);
+    }
+
+    .step::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--g), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .step:hover::before {
+      opacity: 1;
+    }
+
+    .step-n {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 64px;
+      letter-spacing: 2px;
+      color: rgba(255, 193, 7, 0.07);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .step h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 21px;
+      letter-spacing: 1px;
+      color: #D5C898;
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.75;
+    }
 
     /* ── FEATURES GRID ── */
     .feat-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 1px; margin-top: 80px;
-      background: var(--border); border: 1px solid var(--border);
-    }
-    .feat {
-      background: var(--black); padding: 40px;
-      transition: background 0.3s; position: relative; overflow: hidden;
-    }
-    .feat::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 0 0, rgba(255,193,7,0.05), transparent 60%); opacity: 0; transition: opacity 0.4s; }
-    .feat:hover { background: var(--s1); }
-    .feat:hover::before { opacity: 1; }
-    .feat-num { font-family: 'Bebas Neue', sans-serif; font-size: 11px; letter-spacing: 3px; color: rgba(255,193,7,0.28); margin-bottom: 22px; }
-    .feat-icon {
-      width: 46px; height: 46px; margin-bottom: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 80px;
+      background: var(--border);
       border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
+    }
+
+    .feat {
+      background: var(--black);
+      padding: 40px;
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feat::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 0 0, rgba(255, 193, 7, 0.05), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .feat:hover {
+      background: var(--s1);
+    }
+
+    .feat:hover::before {
+      opacity: 1;
+    }
+
+    .feat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: rgba(255, 193, 7, 0.28);
+      margin-bottom: 22px;
+    }
+
+    .feat-icon {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 18px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-      background: rgba(255,193,7,0.04);
+      background: rgba(255, 193, 7, 0.04);
       transition: background 0.3s, border-color 0.3s;
     }
-    .feat:hover .feat-icon { background: rgba(255,193,7,0.1); border-color: rgba(255,193,7,0.3); }
-    .feat-icon svg { width: 20px; height: 20px; stroke: var(--g); fill: none; stroke-width: 1.8; }
-    .feat h3 { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 1px; color: #D5C898; margin-bottom: 10px; }
-    .feat p { font-size: 13px; color: var(--dim); line-height: 1.75; }
+
+    .feat:hover .feat-icon {
+      background: rgba(255, 193, 7, 0.1);
+      border-color: rgba(255, 193, 7, 0.3);
+    }
+
+    .feat-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--g);
+      fill: none;
+      stroke-width: 1.8;
+    }
+
+    .feat h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #D5C898;
+      margin-bottom: 10px;
+    }
+
+    .feat p {
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.75;
+    }
 
     /* ── WHO SECTION ── */
-    .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 80px; background: var(--border); }
-    .who-card { background: var(--s1); padding: 60px 48px; position: relative; overflow: hidden; transition: background 0.3s; }
-    .who-card:hover { background: var(--s2); }
-    .who-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--g); }
-    .who-card-tag { font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--g); margin-bottom: 24px; }
-    .who-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 1px; color: #D5C898; margin-bottom: 16px; line-height: 1.1; }
-    .who-card p { font-size: 14px; color: var(--dim); line-height: 1.8; margin-bottom: 32px; }
-    .who-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .who-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--muted); }
-    .who-list li::before { content: '→'; color: var(--g); font-family: 'Space Mono', monospace; font-size: 11px; flex-shrink: 0; margin-top: 1px; }
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      margin-top: 80px;
+      background: var(--border);
+    }
+
+    .who-card {
+      background: var(--s1);
+      padding: 60px 48px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+    }
+
+    .who-card:hover {
+      background: var(--s2);
+    }
+
+    .who-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--g);
+    }
+
+    .who-card-tag {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--g);
+      margin-bottom: 24px;
+    }
+
+    .who-card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      letter-spacing: 1px;
+      color: #D5C898;
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+
+    .who-card p {
+      font-size: 14px;
+      color: var(--dim);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .who-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .who-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .who-list li::before {
+      content: '→';
+      color: var(--g);
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
 
     /* ── COVERAGE ── */
-    .cov-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 80px; }
-    .cov-map { background: #04030A; border: 1px solid var(--border); border-left: 3px solid var(--g); border-radius: 4px; aspect-ratio: 4/3; position: relative; overflow: hidden; }
-    .cov-map::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(255,193,7,0.05), transparent 60%); }
-    .areas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 32px; }
-    .area { display: flex; align-items: center; gap: 10px; padding: 13px 16px; background: var(--s1); border: 1px solid var(--border); font-size: 13px; color: var(--muted); transition: border-color 0.2s, color 0.2s, background 0.2s; cursor: default; }
-    .area:hover { border-color: rgba(255,193,7,0.4); color: var(--gb); background: rgba(255,193,7,0.03); }
-    .area-dot { width: 6px; height: 6px; background: var(--g); flex-shrink: 0; }
+    .cov-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-top: 80px;
+    }
+
+    .cov-map {
+      background: #04030A;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--g);
+      border-radius: 4px;
+      aspect-ratio: 4/3;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cov-map::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 193, 7, 0.05), transparent 60%);
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 32px;
+    }
+
+    .area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 16px;
+      background: var(--s1);
+      border: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      cursor: default;
+    }
+
+    .area:hover {
+      border-color: rgba(255, 193, 7, 0.4);
+      color: var(--gb);
+      background: rgba(255, 193, 7, 0.03);
+    }
+
+    .area-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--g);
+      flex-shrink: 0;
+    }
 
     /* ── CTA WRAP ── */
     .cta-wrap {
       margin: 0 56px 120px;
-      background: var(--s1); border: 1px solid var(--border); border-top: 3px solid var(--g);
-      padding: 100px 80px; text-align: center;
-      position: relative; overflow: hidden;
+      background: var(--s1);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--g);
+      padding: 100px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
+
     .cta-wrap::before {
       content: 'REPAIR MAN';
-      position: absolute; font-family: 'Bebas Neue', sans-serif;
-      font-size: 200px; letter-spacing: 20px;
-      color: rgba(255,193,7,0.025);
-      top: 50%; left: 50%; transform: translate(-50%, -50%);
-      pointer-events: none; white-space: nowrap;
+      position: absolute;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 200px;
+      letter-spacing: 20px;
+      color: rgba(255, 193, 7, 0.025);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      white-space: nowrap;
     }
-    .cta-wrap h2 { color: var(--gb); }
-    .cta-wrap .sub { margin: 20px auto 48px; text-align: center; color: var(--dim); }
-    .cta-btns { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    .cta-wrap h2 {
+      color: var(--gb);
+    }
+
+    .cta-wrap .sub {
+      margin: 20px auto 48px;
+      text-align: center;
+      color: var(--dim);
+    }
+
+    .cta-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
 
     .btn-store {
-      display: inline-flex; align-items: center; gap: 12px;
-      background: var(--g); color: #05050A;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--g);
+      color: #05050A;
       padding: 16px 32px;
       font-family: 'Space Mono', monospace;
-      font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700;
-      text-decoration: none; border: none; cursor: pointer;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
       clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
       transition: background 0.2s, box-shadow 0.2s;
       box-shadow: 0 0 20px var(--glow);
     }
-    .btn-store:hover { background: var(--gb); box-shadow: 0 0 40px rgba(255,193,7,0.45); }
+
+    .btn-store:hover {
+      background: var(--gb);
+      box-shadow: 0 0 40px rgba(255, 193, 7, 0.45);
+    }
 
     .btn-border {
-      display: inline-flex; align-items: center; gap: 10px;
-      color: var(--g); padding: 15px 32px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--g);
+      padding: 15px 32px;
       font-family: 'Space Mono', monospace;
-      font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
-      text-decoration: none; border: 1px solid var(--g);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--g);
       clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
       transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     }
-    .btn-border:hover { background: rgba(255,193,7,0.07); color: var(--gb); box-shadow: 0 0 20px rgba(255,193,7,0.08); }
+
+    .btn-border:hover {
+      background: rgba(255, 193, 7, 0.07);
+      color: var(--gb);
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.08);
+    }
 
     /* ── MECHANIC CTA ── */
     .mech-banner {
-      margin: 0 56px; margin-bottom: 0;
-      display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;
+      margin: 0 56px;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
       padding: 48px 56px;
       background: var(--black);
       border: 1px solid var(--border);
       border-left: 3px solid var(--g);
     }
-    .mech-banner h3 { font-family: 'Bebas Neue', sans-serif; font-size: 38px; letter-spacing: 1px; color: #D5C898; line-height: 1.1; }
-    .mech-banner p { font-size: 14px; color: var(--dim); margin-top: 8px; max-width: 440px; }
+
+    .mech-banner h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 38px;
+      letter-spacing: 1px;
+      color: #D5C898;
+      line-height: 1.1;
+    }
+
+    .mech-banner p {
+      font-size: 14px;
+      color: var(--dim);
+      margin-top: 8px;
+      max-width: 440px;
+    }
 
     /* ── FOOTER ── */
-    footer { background: #030208; border-top: 1px solid var(--border); padding: 80px 56px 40px; }
-    .footer-inner { max-width: 1280px; margin: 0 auto; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 80px; margin-bottom: 60px; }
-    .footer-brand { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 4px; color: var(--gb); margin-bottom: 14px; text-shadow: 0 0 30px rgba(255,193,7,0.2); }
-    .footer-desc { font-size: 13px; color: var(--dim); line-height: 1.75; max-width: 280px; margin-bottom: 24px; }
-    .fcol h4 { font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--g); margin-bottom: 20px; }
-    .fcol a { display: block; color: var(--dim); font-size: 13px; text-decoration: none; margin-bottom: 12px; transition: color 0.2s; }
-    .fcol a:hover { color: var(--gb); }
-    .footer-line {
-      border-top: 1px solid rgba(255,193,7,0.07); padding-top: 28px;
-      display: flex; justify-content: space-between; align-items: center;
-      font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 1px; color: var(--dim);
+    footer {
+      background: #030208;
+      border-top: 1px solid var(--border);
+      padding: 80px 56px 40px;
     }
-    .footer-links { display: flex; gap: 24px; }
-    .footer-links a { color: var(--dim); text-decoration: none; font-size: 10px; transition: color 0.2s; font-family: 'Space Mono', monospace; }
-    .footer-links a:hover { color: var(--g); }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 80px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      letter-spacing: 4px;
+      color: var(--gb);
+      margin-bottom: 14px;
+      text-shadow: 0 0 30px rgba(255, 193, 7, 0.2);
+    }
+
+    .footer-desc {
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.75;
+      max-width: 280px;
+      margin-bottom: 24px;
+    }
+
+    .fcol h4 {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--g);
+      margin-bottom: 20px;
+    }
+
+    .fcol a {
+      display: block;
+      color: var(--dim);
+      font-size: 13px;
+      text-decoration: none;
+      margin-bottom: 12px;
+      transition: color 0.2s;
+    }
+
+    .fcol a:hover {
+      color: var(--gb);
+    }
+
+    .footer-line {
+      border-top: 1px solid rgba(255, 193, 7, 0.07);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: var(--dim);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 10px;
+      transition: color 0.2s;
+      font-family: 'Space Mono', monospace;
+    }
+
+    .footer-links a:hover {
+      color: var(--g);
+    }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
-      nav { padding: 16px 24px; }
-      .nav-links { display: none; }
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { display: none; }
-      .hero-left { padding: 130px 24px 80px; }
-      section { padding: 80px 24px; }
-      .steps { grid-template-columns: 1fr 1fr; }
-      .feat-grid { grid-template-columns: 1fr; }
-      .who-grid { grid-template-columns: 1fr; }
-      .cov-layout { grid-template-columns: 1fr; }
-      .cta-wrap { margin: 0 24px 80px; padding: 60px 28px; }
-      .mech-banner { margin: 0 24px; padding: 36px 28px; }
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+      nav {
+        padding: 16px 24px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-right {
+        display: none;
+      }
+
+      .hero-left {
+        padding: 130px 24px 80px;
+      }
+
+      section {
+        padding: 80px 24px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .feat-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .who-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cov-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-wrap {
+        margin: 0 24px 80px;
+        padding: 60px 28px;
+      }
+
+      .mech-banner {
+        margin: 0 24px;
+        padding: 36px 28px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- ── NAV ───────────────────────────────────────────── -->
-<nav>
-  <a href="#" class="logo">
-    <svg width="33" height="38" viewBox="0 0 68 78" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <polygon points="34,0 68,19.6 68,58.8 34,78.4 0,58.8 0,19.6" fill="#FFC107"/>
-      <polygon points="34,8 60,23.5 60,55.3 34,70.8 8,55.3 8,23.5" fill="#FF8F00" opacity="0.45"/>
-      <g transform="translate(34,41) rotate(-35)">
-        <rect x="-4" y="-22" width="8" height="30" rx="3" fill="#05050A"/>
-        <circle cx="0" cy="-22" r="9" fill="none" stroke="#05050A" stroke-width="5.5"/>
-        <circle cx="0" cy="-22" r="9" fill="none" stroke="#FFC107" stroke-width="2"/>
-        <rect x="-10" y="-26" width="20" height="7" fill="#FF8F00"/>
-        <rect x="-4" y="-26" width="8" height="7" fill="#05050A"/>
-      </g>
-      <rect x="15" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
-      <rect x="29" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
-      <rect x="43" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6"/>
-    </svg>
-    <div class="logo-wordmark">
-      <span class="logo-wordmark-main">REPAIR<span> MAN</span></span>
-      <span class="logo-wordmark-sub">On-road mechanic network</span>
+  <!-- ── NAV ───────────────────────────────────────────── -->
+  <nav>
+    <a href="#" class="logo">
+      <svg width="33" height="38" viewBox="0 0 68 78" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="34,0 68,19.6 68,58.8 34,78.4 0,58.8 0,19.6" fill="#FFC107" />
+        <polygon points="34,8 60,23.5 60,55.3 34,70.8 8,55.3 8,23.5" fill="#FF8F00" opacity="0.45" />
+        <g transform="translate(34,41) rotate(-35)">
+          <rect x="-4" y="-22" width="8" height="30" rx="3" fill="#05050A" />
+          <circle cx="0" cy="-22" r="9" fill="none" stroke="#05050A" stroke-width="5.5" />
+          <circle cx="0" cy="-22" r="9" fill="none" stroke="#FFC107" stroke-width="2" />
+          <rect x="-10" y="-26" width="20" height="7" fill="#FF8F00" />
+          <rect x="-4" y="-26" width="8" height="7" fill="#05050A" />
+        </g>
+        <rect x="15" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6" />
+        <rect x="29" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6" />
+        <rect x="43" y="62" width="10" height="3" rx="1.5" fill="#05050A" opacity="0.6" />
+      </svg>
+      <div class="logo-wordmark">
+        <span class="logo-wordmark-main">REPAIR<span> MAN</span></span>
+        <span class="logo-wordmark-sub">On-road mechanic network</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#how">Process</a>
+      <a href="#features">Features</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#download">Download</a>
     </div>
-  </a>
-  <div class="nav-links">
-    <a href="#how">Process</a>
-    <a href="#features">Features</a>
-    <a href="#coverage">Coverage</a>
-    <a href="#download">Download</a>
-  </div>
-  <a href="mechanic-register.html" class="nav-cta">Join as Mechanic</a>
-</nav>
+    <a href="mechanic-register.html" class="nav-cta">Join as Mechanic</a>
+  </nav>
 
-<!-- ── HERO ──────────────────────────────────────────── -->
-<div class="hero">
-  <div class="hero-left">
-    <div class="hero-eyebrow">Coimbatore's #1 roadside app</div>
-    <h1>
-      STUCK
-      <span class="gold-line">ON THE</span>
-      ROAD?
-    </h1>
-    <div class="hero-tagline">— Help arrives in minutes, not hours</div>
-    <p class="hero-desc">
-      Repair Man connects you to verified mechanics across Coimbatore instantly. Flat tyre, dead battery, engine trouble — tap once and we're on it. Available 24/7.
-    </p>
-    <div class="hero-btns">
-      <!-- <a href="#download" class="btn-main">
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Coimbatore's #1 roadside app</div>
+      <h1>
+        STUCK
+        <span class="gold-line">ON THE</span>
+        ROAD?
+      </h1>
+      <div class="hero-tagline">— Help arrives in minutes, not hours</div>
+      <p class="hero-desc">
+        Repair Man connects you to verified mechanics across Coimbatore instantly. Flat tyre, dead battery, engine
+        trouble — tap once and we're on it. Available 24/7.
+      </p>
+      <div class="hero-btns">
+        <!-- <a href="#download" class="btn-main">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
         Get the App
       </a> -->
-      <a href="#how" class="btn-main">
-        See how it works
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
+        <a href="#how" class="btn-main">
+          See how it works
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-n">500+</div>
+          <div class="stat-l">Mechanics</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">30 MIN</div>
+          <div class="stat-l">Avg Arrival</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">24/7</div>
+          <div class="stat-l">Coverage</div>
+        </div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-n">500+</div>
-        <div class="stat-l">Mechanics</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">15 MIN</div>
-        <div class="stat-l">Avg Arrival</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">24/7</div>
-        <div class="stat-l">Coverage</div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Phone mockup -->
-  <div class="hero-right">
-    <div class="badge b1">
-      <div class="badge-label">Mechanic ETA</div>
-      <div class="badge-val">11 MIN</div>
-      <div class="badge-sub">↑ Rajan K. en route</div>
-    </div>
-    <div class="phone">
-      <div class="phone-inner">
-        <div class="phone-bar">
-          <span>REPAIR MAN</span>
-          <span>9:41</span>
-        </div>
-        <div class="phone-map">
-          <div class="phone-grid"></div>
-          <div class="road-h"></div>
-          <div class="road-v"></div>
-          <div class="pin">
-            <div class="pin-body">
-              <svg viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 1 6 6c0 5-6 14-6 14S6 13 6 8a6 6 0 0 1 6-6z"/><circle cx="12" cy="8" r="2"/></svg>
-            </div>
+    <!-- Phone mockup -->
+    <div class="hero-right">
+      <div class="badge b1">
+        <div class="badge-label">Mechanic ETA</div>
+        <div class="badge-val">11 MIN</div>
+        <div class="badge-sub">↑ Rajan K. en route</div>
+      </div>
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="phone-bar">
+            <span>REPAIR MAN</span>
+            <span>9:41</span>
           </div>
-          <div class="radar"></div>
-          <div class="mech-dot">R</div>
-        </div>
-        <div class="phone-body">
-          <div class="p-card">
-            <div class="p-card-row">
-              <div class="p-avatar">RK</div>
-              <div>
-                <div class="p-name">Rajan Kumar</div>
-                <div class="p-sub">★★★★★ &nbsp;4.9 · Tyre specialist</div>
+          <div class="phone-map">
+            <div class="phone-grid"></div>
+            <div class="road-h"></div>
+            <div class="road-v"></div>
+            <div class="pin">
+              <div class="pin-body">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2a6 6 0 0 1 6 6c0 5-6 14-6 14S6 13 6 8a6 6 0 0 1 6-6z" />
+                  <circle cx="12" cy="8" r="2" />
+                </svg>
               </div>
-              <div class="p-eta">ETA 11M</div>
             </div>
-            <div class="p-pills">
-              <span class="p-pill">TYRE</span>
-              <span class="p-pill">BATTERY</span>
-              <span class="p-pill">GENERAL</span>
-            </div>
+            <div class="radar"></div>
+            <div class="mech-dot">R</div>
           </div>
-          <button class="p-btn">📞 CALL MECHANIC</button>
+          <div class="phone-body">
+            <div class="p-card">
+              <div class="p-card-row">
+                <div class="p-avatar">RK</div>
+                <div>
+                  <div class="p-name">Rajan Kumar</div>
+                  <div class="p-sub">★★★★★ &nbsp;4.9 · Tyre specialist</div>
+                </div>
+                <div class="p-eta">ETA 11M</div>
+              </div>
+              <div class="p-pills">
+                <span class="p-pill">TYRE</span>
+                <span class="p-pill">BATTERY</span>
+                <span class="p-pill">GENERAL</span>
+              </div>
+            </div>
+            <button class="p-btn">📞 CALL MECHANIC</button>
+          </div>
+        </div>
+      </div>
+      <div class="badge b2">
+        <div class="badge-label">Job done</div>
+        <div class="badge-val">₹320</div>
+        <div class="badge-sub">Tyre swap · Saravanampatti</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TICKER ─────────────────────────────────────────── -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">FLAT TYRE <span class="ticker-dot"></span></span>
+      <span class="ticker-item">DEAD BATTERY <span class="ticker-dot"></span></span>
+      <span class="ticker-item">EMERGENCY TOWING <span class="ticker-dot"></span></span>
+      <span class="ticker-item">FUEL DELIVERY <span class="ticker-dot"></span></span>
+      <span class="ticker-item">ENGINE TROUBLE <span class="ticker-dot"></span></span>
+      <span class="ticker-item">24/7 COVERAGE <span class="ticker-dot"></span></span>
+      <span class="ticker-item">VERIFIED MECHANICS <span class="ticker-dot"></span></span>
+      <span class="ticker-item">FLAT TYRE <span class="ticker-dot"></span></span>
+      <span class="ticker-item">DEAD BATTERY <span class="ticker-dot"></span></span>
+      <span class="ticker-item">EMERGENCY TOWING <span class="ticker-dot"></span></span>
+      <span class="ticker-item">FUEL DELIVERY <span class="ticker-dot"></span></span>
+      <span class="ticker-item">ENGINE TROUBLE <span class="ticker-dot"></span></span>
+      <span class="ticker-item">24/7 COVERAGE <span class="ticker-dot"></span></span>
+      <span class="ticker-item">VERIFIED MECHANICS <span class="ticker-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ── HOW IT WORKS ───────────────────────────────────── -->
+  <section style="background: var(--s1);" id="how">
+    <div class="inner">
+      <div class="section-label">Process</div>
+      <h2>FOUR STEPS<br>TO <span class="g">RESCUE</span></h2>
+      <p class="sub">No hold music. No guesswork. Just fast, transparent help tracked live on your screen.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-n">01</div>
+          <h3>TAP & REPORT</h3>
+          <p>Open Repair Man, drop your pin and select your problem — flat tyre, breakdown, dead battery or more.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">02</div>
+          <h3>SMART MATCH</h3>
+          <p>We instantly find the closest verified mechanic with the right skills for your exact situation.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">03</div>
+          <h3>LIVE TRACKING</h3>
+          <p>Watch your mechanic move toward you in real time. Chat or call directly from the app.</p>
+        </div>
+        <div class="step">
+          <div class="step-n">04</div>
+          <h3>PAY & RATE</h3>
+          <p>Transparent pricing upfront. Pay cash or digital. Rate your mechanic to keep our network top-tier.</p>
         </div>
       </div>
     </div>
-    <div class="badge b2">
-      <div class="badge-label">Job done</div>
-      <div class="badge-val">₹320</div>
-      <div class="badge-sub">Tyre swap · Saravanampatti</div>
-    </div>
-  </div>
-</div>
+  </section>
 
-<!-- ── TICKER ─────────────────────────────────────────── -->
-<div class="ticker">
-  <div class="ticker-track">
-    <span class="ticker-item">FLAT TYRE <span class="ticker-dot"></span></span>
-    <span class="ticker-item">DEAD BATTERY <span class="ticker-dot"></span></span>
-    <span class="ticker-item">EMERGENCY TOWING <span class="ticker-dot"></span></span>
-    <span class="ticker-item">FUEL DELIVERY <span class="ticker-dot"></span></span>
-    <span class="ticker-item">ENGINE TROUBLE <span class="ticker-dot"></span></span>
-    <span class="ticker-item">24/7 COVERAGE <span class="ticker-dot"></span></span>
-    <span class="ticker-item">VERIFIED MECHANICS <span class="ticker-dot"></span></span>
-    <span class="ticker-item">FLAT TYRE <span class="ticker-dot"></span></span>
-    <span class="ticker-item">DEAD BATTERY <span class="ticker-dot"></span></span>
-    <span class="ticker-item">EMERGENCY TOWING <span class="ticker-dot"></span></span>
-    <span class="ticker-item">FUEL DELIVERY <span class="ticker-dot"></span></span>
-    <span class="ticker-item">ENGINE TROUBLE <span class="ticker-dot"></span></span>
-    <span class="ticker-item">24/7 COVERAGE <span class="ticker-dot"></span></span>
-    <span class="ticker-item">VERIFIED MECHANICS <span class="ticker-dot"></span></span>
-  </div>
-</div>
-
-<!-- ── HOW IT WORKS ───────────────────────────────────── -->
-<section style="background: var(--s1);" id="how">
-  <div class="inner">
-    <div class="section-label">Process</div>
-    <h2>FOUR STEPS<br>TO <span class="g">RESCUE</span></h2>
-    <p class="sub">No hold music. No guesswork. Just fast, transparent help tracked live on your screen.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-n">01</div>
-        <h3>TAP & REPORT</h3>
-        <p>Open Repair Man, drop your pin and select your problem — flat tyre, breakdown, dead battery or more.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">02</div>
-        <h3>SMART MATCH</h3>
-        <p>We instantly find the closest verified mechanic with the right skills for your exact situation.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">03</div>
-        <h3>LIVE TRACKING</h3>
-        <p>Watch your mechanic move toward you in real time. Chat or call directly from the app.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">04</div>
-        <h3>PAY & RATE</h3>
-        <p>Transparent pricing upfront. Pay cash or digital. Rate your mechanic to keep our network top-tier.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FEATURES ───────────────────────────────────────── -->
-<section style="background: var(--black);" id="features">
-  <div class="inner">
-    <div class="section-label">Features</div>
-    <h2>BUILT FOR<br>TAMIL NADU <span class="g">ROADS.</span></h2>
-    <p class="sub">Six reasons drivers across Coimbatore trust Repair Man when it matters most.</p>
-    <div class="feat-grid">
-      <div class="feat">
-        <div class="feat-num">01 — TRACKING</div>
-        <div class="feat-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
-        <h3>LIVE LOCATION TRACKING</h3>
-        <p>See your mechanic's exact position on the map from dispatch to arrival. Zero uncertainty.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-num">02 — TRUST</div>
-        <div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>VERIFIED MECHANICS ONLY</h3>
-        <p>Every mechanic passes background checks, skill verification and ongoing quality ratings.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-num">03 — SECURITY</div>
-        <div class="feat-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-        <h3>OTP ARRIVAL CONFIRMATION</h3>
-        <p>Share a one-time code when the mechanic arrives — no fraud, no impersonation.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-num">04 — COMMUNICATION</div>
-        <div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-        <h3>IN-APP COMMUNICATION</h3>
-        <p>Chat or call your mechanic without leaving the app. Coordinate arrival, describe the issue.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-num">05 — VEHICLES</div>
-        <div class="feat-icon"><svg viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v5"/><circle cx="15.5" cy="17.5" r="2.5"/><circle cx="5.5" cy="17.5" r="2.5"/></svg></div>
-        <h3>ALL VEHICLE TYPES</h3>
-        <p>2-wheelers, 4-wheelers, autos, vans and heavy vehicles. If it has wheels, we cover it.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-num">06 — AVAILABILITY</div>
-        <div class="feat-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <h3>24 × 7 COVERAGE</h3>
-        <p>Breakdowns don't follow business hours. Repair Man is live round the clock, every day.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FOR WHOM ────────────────────────────────────────── -->
-<section style="background: var(--s2);">
-  <div class="inner">
-    <div class="section-label">Who It's For</div>
-    <h2>DRIVERS.<br><span class="g">MECHANICS.</span></h2>
-    <div class="who-grid">
-      <div class="who-card">
-        <div class="who-card-tag">For Drivers</div>
-        <h3>YOU DRIVE.<br>WE'VE GOT YOUR BACK.</h3>
-        <p>Whether you're commuting on Avinashi Road or driving back from Pollachi late at night — Repair Man is your emergency button.</p>
-        <ul class="who-list">
-          <li>Mechanic at your location in minutes</li>
-          <li>Upfront transparent pricing — no surprises</li>
-          <li>Verified, rated mechanics only</li>
-          <li>Works for all vehicles, all breakdown types</li>
-        </ul>
-      </div>
-      <div class="who-card">
-        <div class="who-card-tag">For Mechanics</div>
-        <h3>MORE WORK.<br>LESS WAITING.</h3>
-        <p>Are you a mechanic in Coimbatore? Join Repair Man to get a steady stream of verified breakdown jobs delivered directly to your phone.</p>
-        <ul class="who-list">
-          <li>Jobs matched to your location & skills</li>
-          <li>Transparent earnings, paid fast</li>
-          <li>Build your reputation through ratings</li>
-          <li>Flexible — work when you want</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── COVERAGE ───────────────────────────────────────── -->
-<section style="background: var(--s1);" id="coverage">
-  <div class="inner">
-    <div class="section-label">Coverage</div>
-    <h2>COVERING <span class="g">CBE</span><br>& BEYOND</h2>
-    <p class="sub">50 km radius from Coimbatore city — all major highways, industrial corridors and residential zones.</p>
-    <div class="cov-layout">
-      <div class="cov-map">
-        <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 400 300" fill="none">
-          <defs>
-            <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,193,7,0.05)" stroke-width="1"/>
-            </pattern>
-          </defs>
-          <rect width="400" height="300" fill="url(#g)"/>
-          <line x1="0" y1="150" x2="400" y2="150" stroke="rgba(255,193,7,0.06)" stroke-width="10"/>
-          <line x1="200" y1="0" x2="200" y2="300" stroke="rgba(255,193,7,0.06)" stroke-width="10"/>
-          <line x1="0" y1="70" x2="400" y2="230" stroke="rgba(255,193,7,0.03)" stroke-width="5"/>
-          <circle cx="200" cy="150" r="55" stroke="rgba(255,193,7,0.25)" stroke-width="1" fill="rgba(255,193,7,0.04)"/>
-          <circle cx="200" cy="150" r="95" stroke="rgba(255,193,7,0.12)" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
-          <circle cx="200" cy="150" r="135" stroke="rgba(255,193,7,0.06)" stroke-width="1" stroke-dasharray="3 6" fill="none"/>
-          <circle cx="200" cy="150" r="20" fill="rgba(255,193,7,0.1)"/>
-          <circle cx="200" cy="150" r="8" fill="#FFC107"/>
-          <circle cx="200" cy="150" r="4" fill="#FFD54F"/>
-          <text x="216" y="155" fill="rgba(255,220,100,0.9)" font-size="11" font-family="Space Mono,monospace" font-weight="700">COIMBATORE</text>
-          <circle cx="272" cy="128" r="5" fill="rgba(255,193,7,0.55)"/>
-          <text x="282" y="132" fill="rgba(255,193,7,0.5)" font-size="9" font-family="Space Mono,monospace">TIRUPUR</text>
-          <circle cx="292" cy="88" r="4" fill="rgba(255,193,7,0.35)"/>
-          <text x="300" y="92" fill="rgba(255,193,7,0.35)" font-size="8" font-family="Space Mono,monospace">ERODE</text>
-          <circle cx="160" cy="202" r="4" fill="rgba(255,193,7,0.4)"/>
-          <text x="110" y="206" fill="rgba(255,193,7,0.4)" font-size="8" font-family="Space Mono,monospace">POLLACHI</text>
-          <circle cx="168" cy="104" r="4" fill="rgba(255,193,7,0.35)"/>
-          <text x="86" y="108" fill="rgba(255,193,7,0.35)" font-size="8" font-family="Space Mono,monospace">METTUPALAYAM</text>
-          <circle cx="242" cy="162" r="3" fill="rgba(255,193,7,0.3)"/>
-          <text x="250" y="166" fill="rgba(255,193,7,0.3)" font-size="8" font-family="Space Mono,monospace">SULUR</text>
-          <line x1="200" y1="150" x2="272" y2="128" stroke="rgba(255,193,7,0.1)" stroke-width="1" stroke-dasharray="3 3"/>
-          <line x1="200" y1="150" x2="160" y2="202" stroke="rgba(255,193,7,0.1)" stroke-width="1" stroke-dasharray="3 3"/>
-          <line x1="200" y1="150" x2="168" y2="104" stroke="rgba(255,193,7,0.1)" stroke-width="1" stroke-dasharray="3 3"/>
-        </svg>
-      </div>
-      <div>
-        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:32px;font-weight:300;">
-          Repair Man operates across the western Tamil Nadu belt. Erode and Salem corridors launching Q3 2026.
-        </p>
-        <div class="areas-grid">
-          <div class="area"><span class="area-dot"></span>Coimbatore City</div>
-          <div class="area"><span class="area-dot"></span>Tirupur</div>
-          <div class="area"><span class="area-dot"></span>Pollachi</div>
-          <div class="area"><span class="area-dot"></span>Mettupalayam</div>
-          <div class="area"><span class="area-dot"></span>Sulur</div>
-          <div class="area"><span class="area-dot"></span>Kinathukadavu</div>
-          <div class="area"><span class="area-dot"></span>Annur</div>
-          <div class="area"><span class="area-dot"></span>Avinashi Road</div>
+  <!-- ── FEATURES ───────────────────────────────────────── -->
+  <section style="background: var(--black);" id="features">
+    <div class="inner">
+      <div class="section-label">Features</div>
+      <h2>BUILT FOR<br>TAMIL NADU <span class="g">ROADS.</span></h2>
+      <p class="sub">Six reasons drivers across Coimbatore trust Repair Man when it matters most.</p>
+      <div class="feat-grid">
+        <div class="feat">
+          <div class="feat-num">01 — TRACKING</div>
+          <div class="feat-icon"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg></div>
+          <h3>LIVE LOCATION TRACKING</h3>
+          <p>See your mechanic's exact position on the map from dispatch to arrival. Zero uncertainty.</p>
         </div>
-        <p style="font-family:'Space Mono',monospace;font-size:10px;color:var(--dim);margin-top:24px;letter-spacing:1px;">ERODE + SALEM → Q3 2026</p>
+        <div class="feat">
+          <div class="feat-num">02 — TRUST</div>
+          <div class="feat-icon"><svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg></div>
+          <h3>VERIFIED MECHANICS ONLY</h3>
+          <p>Every mechanic passes background checks, skill verification and ongoing quality ratings.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-num">03 — SECURITY</div>
+          <div class="feat-icon"><svg viewBox="0 0 24 24">
+              <rect x="3" y="11" width="18" height="11" rx="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg></div>
+          <h3>OTP ARRIVAL CONFIRMATION</h3>
+          <p>Share a one-time code when the mechanic arrives — no fraud, no impersonation.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-num">04 — COMMUNICATION</div>
+          <div class="feat-icon"><svg viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg></div>
+          <h3>IN-APP COMMUNICATION</h3>
+          <p>Chat or call your mechanic without leaving the app. Coordinate arrival, describe the issue.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-num">05 — VEHICLES</div>
+          <div class="feat-icon"><svg viewBox="0 0 24 24">
+              <path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v5" />
+              <circle cx="15.5" cy="17.5" r="2.5" />
+              <circle cx="5.5" cy="17.5" r="2.5" />
+            </svg></div>
+          <h3>ALL VEHICLE TYPES</h3>
+          <p>2-wheelers, 4-wheelers, autos, vans and heavy vehicles. If it has wheels, we cover it.</p>
+        </div>
+        <div class="feat">
+          <div class="feat-num">06 — AVAILABILITY</div>
+          <div class="feat-icon"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg></div>
+          <h3>24 × 7 COVERAGE</h3>
+          <p>Breakdowns don't follow business hours. Repair Man is live round the clock, every day.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── MECHANIC BANNER ────────────────────────────────── -->
-<section style="background: var(--black); padding: 80px 56px;">
-  <div class="inner">
-    <div class="mech-banner">
-      <div>
-        <h3>JOIN AS A PARTNER MECHANIC</h3>
-        <p>Get verified breakdown jobs delivered to your phone. Work flexibly, earn more, build your reputation.</p>
+  <!-- ── FOR WHOM ────────────────────────────────────────── -->
+  <section style="background: var(--s2);">
+    <div class="inner">
+      <div class="section-label">Who It's For</div>
+      <h2>DRIVERS.<br><span class="g">MECHANICS.</span></h2>
+      <div class="who-grid">
+        <div class="who-card">
+          <div class="who-card-tag">For Drivers</div>
+          <h3>YOU DRIVE.<br>WE'VE GOT YOUR BACK.</h3>
+          <p>Whether you're commuting on Avinashi Road or driving back from Pollachi late at night — Repair Man is your
+            emergency button.</p>
+          <ul class="who-list">
+            <li>Mechanic at your location in minutes</li>
+            <li>Upfront transparent pricing — no surprises</li>
+            <li>Verified, rated mechanics only</li>
+            <li>Works for all vehicles, all breakdown types</li>
+          </ul>
+        </div>
+        <div class="who-card">
+          <div class="who-card-tag">For Mechanics</div>
+          <h3>MORE WORK.<br>LESS WAITING.</h3>
+          <p>Are you a mechanic in Coimbatore? Join Repair Man to get a steady stream of verified breakdown jobs
+            delivered directly to your phone.</p>
+          <ul class="who-list">
+            <li>Jobs matched to your location & skills</li>
+            <li>Transparent earnings, paid fast</li>
+            <li>Build your reputation through ratings</li>
+            <li>Flexible — work when you want</li>
+          </ul>
+        </div>
       </div>
-      <a href="mechanic-register.html" class="btn-main" style="flex-shrink:0;">
-        Register Now →
-      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- <section style="background: var(--black); padding: 80px 56px 120px;" id="download">
+  <!-- ── COVERAGE ───────────────────────────────────────── -->
+  <section style="background: var(--s1);" id="coverage">
+    <div class="inner">
+      <div class="section-label">Coverage</div>
+      <h2>COVERING <span class="g">CBE</span><br>& BEYOND</h2>
+      <p class="sub">50 km radius from Coimbatore city — all major highways, industrial corridors and residential zones.
+      </p>
+      <div class="cov-layout">
+        <div class="cov-map">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;" viewBox="0 0 400 300" fill="none">
+            <defs>
+              <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,193,7,0.05)" stroke-width="1" />
+              </pattern>
+            </defs>
+            <rect width="400" height="300" fill="url(#g)" />
+            <line x1="0" y1="150" x2="400" y2="150" stroke="rgba(255,193,7,0.06)" stroke-width="10" />
+            <line x1="200" y1="0" x2="200" y2="300" stroke="rgba(255,193,7,0.06)" stroke-width="10" />
+            <line x1="0" y1="70" x2="400" y2="230" stroke="rgba(255,193,7,0.03)" stroke-width="5" />
+            <circle cx="200" cy="150" r="55" stroke="rgba(255,193,7,0.25)" stroke-width="1"
+              fill="rgba(255,193,7,0.04)" />
+            <circle cx="200" cy="150" r="95" stroke="rgba(255,193,7,0.12)" stroke-width="1" stroke-dasharray="4 4"
+              fill="none" />
+            <circle cx="200" cy="150" r="135" stroke="rgba(255,193,7,0.06)" stroke-width="1" stroke-dasharray="3 6"
+              fill="none" />
+            <circle cx="200" cy="150" r="20" fill="rgba(255,193,7,0.1)" />
+            <circle cx="200" cy="150" r="8" fill="#FFC107" />
+            <circle cx="200" cy="150" r="4" fill="#FFD54F" />
+            <text x="216" y="155" fill="rgba(255,220,100,0.9)" font-size="11" font-family="Space Mono,monospace"
+              font-weight="700">COIMBATORE</text>
+            <circle cx="272" cy="128" r="5" fill="rgba(255,193,7,0.55)" />
+            <text x="282" y="132" fill="rgba(255,193,7,0.5)" font-size="9"
+              font-family="Space Mono,monospace">TIRUPUR</text>
+            <circle cx="292" cy="88" r="4" fill="rgba(255,193,7,0.35)" />
+            <text x="300" y="92" fill="rgba(255,193,7,0.35)" font-size="8"
+              font-family="Space Mono,monospace">ERODE</text>
+            <circle cx="160" cy="202" r="4" fill="rgba(255,193,7,0.4)" />
+            <text x="110" y="206" fill="rgba(255,193,7,0.4)" font-size="8"
+              font-family="Space Mono,monospace">POLLACHI</text>
+            <circle cx="168" cy="104" r="4" fill="rgba(255,193,7,0.35)" />
+            <text x="86" y="108" fill="rgba(255,193,7,0.35)" font-size="8"
+              font-family="Space Mono,monospace">METTUPALAYAM</text>
+            <circle cx="242" cy="162" r="3" fill="rgba(255,193,7,0.3)" />
+            <text x="250" y="166" fill="rgba(255,193,7,0.3)" font-size="8"
+              font-family="Space Mono,monospace">SULUR</text>
+            <line x1="200" y1="150" x2="272" y2="128" stroke="rgba(255,193,7,0.1)" stroke-width="1"
+              stroke-dasharray="3 3" />
+            <line x1="200" y1="150" x2="160" y2="202" stroke="rgba(255,193,7,0.1)" stroke-width="1"
+              stroke-dasharray="3 3" />
+            <line x1="200" y1="150" x2="168" y2="104" stroke="rgba(255,193,7,0.1)" stroke-width="1"
+              stroke-dasharray="3 3" />
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:32px;font-weight:300;">
+            Repair Man operates across the western Tamil Nadu belt. Erode and Salem corridors launching Q3 2026.
+          </p>
+          <div class="areas-grid">
+            <div class="area"><span class="area-dot"></span>Coimbatore City</div>
+            <div class="area"><span class="area-dot"></span>Tirupur</div>
+            <div class="area"><span class="area-dot"></span>Pollachi</div>
+            <div class="area"><span class="area-dot"></span>Mettupalayam</div>
+            <div class="area"><span class="area-dot"></span>Sulur</div>
+            <div class="area"><span class="area-dot"></span>Kinathukadavu</div>
+            <div class="area"><span class="area-dot"></span>Annur</div>
+            <div class="area"><span class="area-dot"></span>Avinashi Road</div>
+          </div>
+          <p
+            style="font-family:'Space Mono',monospace;font-size:10px;color:var(--dim);margin-top:24px;letter-spacing:1px;">
+            ERODE + SALEM → Q3 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MECHANIC BANNER ────────────────────────────────── -->
+  <section style="background: var(--black); padding: 80px 56px;">
+    <div class="inner">
+      <div class="mech-banner">
+        <div>
+          <h3>JOIN AS A PARTNER MECHANIC</h3>
+          <p>Get verified breakdown jobs delivered to your phone. Work flexibly, earn more, build your reputation.</p>
+        </div>
+        <a href="mechanic-register.html" class="btn-main" style="flex-shrink:0;">
+          Register Now →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section style="background: var(--black); padding: 80px 56px 120px;" id="download">
   <div class="inner">
     <div class="cta-wrap">
       <h2>GET REPAIR MAN<br>BEFORE YOU <span class="g">NEED IT</span></h2>
@@ -905,50 +1819,51 @@
   </div>
 </section> -->
 
-<!-- ── FOOTER ─────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">REPAIR MAN</div>
-        <p class="footer-desc">Roadside mechanic network for Coimbatore and Tamil Nadu's western corridor. Fast, verified, transparent.</p>
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">REPAIR MAN</div>
+          <p class="footer-desc">Roadside mechanic network for Coimbatore and Tamil Nadu's western corridor. Fast,
+            verified, transparent.</p>
+        </div>
+        <div class="fcol">
+          <h4>Services</h4>
+          <a href="#">Tyre Change</a>
+          <a href="#">Battery Jumpstart</a>
+          <a href="#">Fuel Delivery</a>
+          <a href="#">Towing Service</a>
+          <a href="#">Minor Repairs</a>
+        </div>
+        <div class="fcol">
+          <h4>Coverage</h4>
+          <a href="#">Coimbatore</a>
+          <a href="#">Tirupur</a>
+          <a href="#">Pollachi</a>
+          <a href="#">Mettupalayam</a>
+          <a href="#">Sulur</a>
+        </div>
+        <div class="fcol">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="mechanic-register.html">Join as Mechanic</a>
+          <a href="#">Safety Standards</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
-      <div class="fcol">
-        <h4>Services</h4>
-        <a href="#">Tyre Change</a>
-        <a href="#">Battery Jumpstart</a>
-        <a href="#">Fuel Delivery</a>
-        <a href="#">Towing Service</a>
-        <a href="#">Minor Repairs</a>
-      </div>
-      <div class="fcol">
-        <h4>Coverage</h4>
-        <a href="#">Coimbatore</a>
-        <a href="#">Tirupur</a>
-        <a href="#">Pollachi</a>
-        <a href="#">Mettupalayam</a>
-        <a href="#">Sulur</a>
-      </div>
-      <div class="fcol">
-        <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="mechanic-register.html">Join as Mechanic</a>
-        <a href="#">Safety Standards</a>
-        <a href="#">Contact</a>
+      <div class="footer-line">
+        <span>© 2026 REPAIR MAN — கோயம்புத்தூர், Tamil Nadu</span>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
       </div>
     </div>
-    <div class="footer-line">
-      <span>© 2026 REPAIR MAN — கோயம்புத்தூர், Tamil Nadu</span>
-      <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- ── WHATSAPP FLOATING BUTTON ──────────────────────── -->
-<div id="wa-btn" title="Get help via WhatsApp" onclick="waContact()" style="
+  <!-- ── WHATSAPP FLOATING BUTTON ──────────────────────── -->
+  <div id="wa-btn" title="Get help via WhatsApp" onclick="waContact()" style="
   position: fixed; bottom: 28px; right: 28px; z-index: 200;
   width: 60px; height: 60px;
   background: #25D366;
@@ -959,14 +1874,16 @@
   animation: wa-pulse 2.5s ease-in-out infinite;
   transition: transform 0.2s;
 ">
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.55 4.095 1.512 5.818L0 24l6.337-1.487A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.001-1.365l-.358-.213-3.762.883.948-3.667-.234-.376A9.818 9.818 0 1 1 12 21.818z"/>
-  </svg>
-</div>
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path
+        d="M12 0C5.373 0 0 5.373 0 12c0 2.112.55 4.095 1.512 5.818L0 24l6.337-1.487A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.001-1.365l-.358-.213-3.762.883.948-3.667-.234-.376A9.818 9.818 0 1 1 12 21.818z" />
+    </svg>
+  </div>
 
-<!-- WhatsApp tooltip -->
-<div id="wa-tooltip" style="
+  <!-- WhatsApp tooltip -->
+  <div id="wa-tooltip" style="
   position: fixed; bottom: 98px; right: 28px; z-index: 200;
   background: #0A0910; border: 1px solid rgba(255,193,7,0.2);
   padding: 10px 14px; white-space: nowrap;
@@ -976,53 +1893,70 @@
   transition: opacity 0.2s;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 ">
-  📍 Share location &amp; get a mechanic
-</div>
+    📍 Share location &amp; get a mechanic
+  </div>
 
-<style>
-  @keyframes wa-pulse {
-    0%   { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0.4); }
-    70%  { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 0 0 14px rgba(37,211,102,0); }
-    100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0); }
-  }
-  #wa-btn:hover { transform: scale(1.08); }
-  #wa-btn:hover + #wa-tooltip,
-  #wa-tooltip:hover { opacity: 1; pointer-events: auto; }
-</style>
+  <style>
+    @keyframes wa-pulse {
+      0% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.4);
+      }
 
-<script>
-  // ── CONFIG ──────────────────────────────────────────
-  const WA_NUMBER = '919944902340'; // TODO: replace with your WhatsApp business number (91 + 10 digits)
+      70% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45), 0 0 0 14px rgba(37, 211, 102, 0);
+      }
 
-  function waContact() {
-    const btn = document.getElementById('wa-btn');
-    btn.style.transform = 'scale(0.95)';
-    setTimeout(() => btn.style.transform = 'scale(1)', 150);
-
-    if (!navigator.geolocation) {
-      openWhatsApp(null);
-      return;
+      100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45), 0 0 0 0 rgba(37, 211, 102, 0);
+      }
     }
 
-    navigator.geolocation.getCurrentPosition(
-      (pos) => openWhatsApp(pos.coords),
-      ()    => openWhatsApp(null),
-      { timeout: 6000, maximumAge: 60000 }
-    );
-  }
-
-  function openWhatsApp(coords) {
-    let msg;
-    if (coords) {
-      const { latitude: lat, longitude: lng } = coords;
-      const mapLink = `https://maps.google.com/?q=${lat.toFixed(6)},${lng.toFixed(6)}`;
-      msg = `Hi! I need a mechanic urgently. 🚗🔧\n\nMy current location:\n${mapLink}\n\nPlease send the nearest available mechanic. Thank you!`;
-    } else {
-      msg = `Hi! I need a mechanic urgently. 🚗🔧\n\nPlease help me find the nearest available mechanic in Coimbatore. Thank you!`;
+    #wa-btn:hover {
+      transform: scale(1.08);
     }
-    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
-  }
-</script>
+
+    #wa-btn:hover+#wa-tooltip,
+    #wa-tooltip:hover {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+
+  <script>
+    // ── CONFIG ──────────────────────────────────────────
+    const WA_NUMBER = '919944902340'; // TODO: replace with your WhatsApp business number (91 + 10 digits)
+
+    function waContact() {
+      const btn = document.getElementById('wa-btn');
+      btn.style.transform = 'scale(0.95)';
+      setTimeout(() => btn.style.transform = 'scale(1)', 150);
+
+      if (!navigator.geolocation) {
+        openWhatsApp(null);
+        return;
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        (pos) => openWhatsApp(pos.coords),
+        () => openWhatsApp(null),
+        { timeout: 6000, maximumAge: 60000 }
+      );
+    }
+
+    async function openWhatsApp(coords) {
+      let msg;
+      if (coords) {
+        const { latitude: lat, longitude: lng } = coords;
+        const mapLink = `https://maps.google.com/?q=${lat.toFixed(6)},${lng.toFixed(6)}`;
+        msg = `Hi! I need a mechanic urgently. 🚗🔧\n\nMy current location:\n${mapLink}\n\nPlease send the nearest available mechanic. Thank you!`;
+      } else {
+        msg = `Hi! I need a mechanic urgently. 🚗🔧\n\nPlease help me find the nearest available mechanic in Coimbatore. Thank you!`;
+      }
+
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+  </script>
 
 </body>
+
 </html>

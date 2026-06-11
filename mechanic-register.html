@@ -396,7 +396,7 @@
       display: none;
       flex-direction: column;
       gap: 22px;
-      animation: fadeIn 0.3s ease;
+      animation: fadeIn 0.45s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .form-section.active {
@@ -406,7 +406,7 @@
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(8px);
+        transform: translateY(18px);
       }
 
       to {
@@ -679,24 +679,262 @@
       line-height: 1.75;
     }
 
+    /* ── ENTRANCE ANIMATIONS ── */
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .side-eyebrow {
+      animation: rise 0.8s 0.05s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .side-title {
+      animation: rise 0.8s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .side-sub {
+      animation: rise 0.8s 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .perk {
+      animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .perk:nth-child(1) { animation-delay: 0.35s; }
+    .perk:nth-child(2) { animation-delay: 0.45s; }
+    .perk:nth-child(3) { animation-delay: 0.55s; }
+    .perk:nth-child(4) { animation-delay: 0.65s; }
+
+    .form-panel {
+      animation: rise 0.8s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    /* ── STEP INDICATOR ANIMATION ── */
+    .step-dot.active .dot {
+      animation: dot-glow 2s ease-in-out infinite;
+    }
+
+    @keyframes dot-glow {
+
+      0%,
+      100% {
+        filter: drop-shadow(0 0 3px rgba(255, 193, 7, 0.4));
+      }
+
+      50% {
+        filter: drop-shadow(0 0 12px rgba(255, 193, 7, 0.9));
+      }
+    }
+
+    .step-line {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-line::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--success);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .step-line.done::after {
+      transform: scaleX(1);
+    }
+
+    /* ── MICRO-INTERACTIONS ── */
+    .field-input:focus,
+    .field-select:focus {
+      box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.08);
+    }
+
+    .field-input.invalid {
+      animation: shake 0.4s;
+    }
+
+    @keyframes shake {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      20%,
+      60% {
+        transform: translateX(-6px);
+      }
+
+      40%,
+      80% {
+        transform: translateX(6px);
+      }
+    }
+
+    .check-pill {
+      transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.2s;
+    }
+
+    .check-pill:hover {
+      border-color: rgba(255, 193, 7, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-next {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-next::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -90%;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+      transform: skewX(-20deg);
+      animation: shine 4s ease-in-out infinite;
+    }
+
+    @keyframes shine {
+
+      0%,
+      55% {
+        left: -90%;
+      }
+
+      100% {
+        left: 160%;
+      }
+    }
+
+    /* ── SUCCESS ANIMATION ── */
+    .success-icon {
+      animation: pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .success-title {
+      animation: rise 0.7s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .success-sub {
+      animation: rise 0.7s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 860px) {
       .page-wrap {
         grid-template-columns: 1fr;
+        min-height: auto;
       }
 
       .side-panel {
+        position: static;
+        height: auto;
+        padding: 44px 24px 40px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        justify-content: flex-start;
+      }
+
+      .side-title {
+        font-size: clamp(44px, 13vw, 64px);
+      }
+
+      .side-sub {
+        margin-bottom: 28px;
+      }
+
+      .perks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      .side-watermark {
         display: none;
       }
 
       .form-panel {
-        padding: 32px 24px;
+        padding: 40px 24px 56px;
+      }
+
+      .steps-indicator {
+        margin-bottom: 36px;
       }
     }
 
     @media (max-width: 480px) {
+      nav {
+        padding: 14px 20px;
+      }
+
+      .back-link span,
+      .logo-wordmark-sub {
+        display: none;
+      }
+
       .row {
         grid-template-columns: 1fr;
+      }
+
+      .perks {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .section-heading {
+        font-size: 24px;
+      }
+
+      #map {
+        height: 260px;
+      }
+
+      .form-nav {
+        gap: 10px;
+      }
+
+      #wa-btn {
+        width: 54px !important;
+        height: 54px !important;
+        bottom: 20px !important;
+        right: 20px !important;
+      }
+    }
+
+    /* ── REDUCED MOTION ── */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -725,7 +963,7 @@
         <span class="logo-wordmark-sub">On-road mechanic network</span>
       </div>
     </a>
-    <a href="index.html" class="back-link">← Back to home</a>
+    <a href="index.html" class="back-link">← <span>Back to home</span></a>
   </nav>
 
   <div class="page-wrap">
@@ -1029,7 +1267,8 @@
       currentStep = n;
       document.getElementById(`step-${currentStep}`).classList.add('active');
       updateStepIndicator();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const formTop = document.querySelector('.form-panel').getBoundingClientRect().top + window.scrollY - 70;
+      window.scrollTo({ top: Math.max(formTop, 0), behavior: 'smooth' });
       if (n === 3) initMap();
     }
 

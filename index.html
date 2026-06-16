@@ -1955,10 +1955,31 @@
         trouble — tap once and we're on it. Available 24/7.
       </p>
       <div class="hero-btns">
-        <!-- <a href="#download" class="btn-main">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
-        Get the App
-      </a> -->
+        <!-- WhatsApp emergency CTA -->
+        <div onclick="waContact()" style="
+          cursor:pointer; display:flex; align-items:center; gap:14px;
+          background:rgba(37,211,102,0.08); border:1px solid rgba(37,211,102,0.3);
+          padding:14px 20px; border-radius:4px;
+          transition: background 0.2s, border-color 0.2s;
+        " onmouseenter="this.style.background='rgba(37,211,102,0.14)';this.style.borderColor='rgba(37,211,102,0.6)'"
+           onmouseleave="this.style.background='rgba(37,211,102,0.08)';this.style.borderColor='rgba(37,211,102,0.3)'">
+          <div style="
+            width:44px; height:44px; background:#25D366; border-radius:50%; flex-shrink:0;
+            display:flex; align-items:center; justify-content:center;
+            box-shadow: 0 0 0 6px rgba(37,211,102,0.12);
+            animation: wa-pulse 2.5s ease-in-out infinite;
+          ">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.55 4.095 1.512 5.818L0 24l6.337-1.487A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.001-1.365l-.358-.213-3.762.883.948-3.667-.234-.376A9.818 9.818 0 1 1 12 21.818z"/>
+            </svg>
+          </div>
+          <div>
+            <div style="font-family:'Space Mono',monospace; font-size:12px; color:#25D366; letter-spacing:0.5px; margin-bottom:3px;">GET HELP NOW</div>
+            <div style="font-family:'Inter',sans-serif; font-size:11px; color:var(--muted); line-height:1.4;">Tap → we get your location → nearest mechanic dispatched</div>
+          </div>
+        </div>
+
         <a href="#how" class="btn-main">
           See how it works
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -2342,16 +2363,6 @@
   </footer>
 
   <!-- ── WHATSAPP FLOATING BUTTON ──────────────────────── -->
-  <!-- Always-visible info label -->
-  <div id="wa-label" style="
-    position: fixed; bottom: 22px; right: 100px; z-index: 200;
-    display: flex; flex-direction: column; align-items: flex-end; justify-content: center;
-    gap: 3px; pointer-events: none;
-  ">
-    <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.5px;color:#25D366;white-space:nowrap;">📍 Tap to share location</span>
-    <span style="font-family:'Inter',sans-serif;font-size:10px;color:#6B6070;white-space:nowrap;">Team contacts you with nearest mechanic</span>
-  </div>
-
   <div id="wa-btn" title="Get help via WhatsApp" onclick="waContact()" style="
   position: fixed; bottom: 28px; right: 28px; z-index: 200;
   width: 60px; height: 60px;
@@ -2426,10 +2437,6 @@
       pointer-events: auto;
     }
 
-    /* Hide the inline label on very small phones */
-    @media (max-width: 400px) {
-      #wa-label { display: none !important; }
-    }
   </style>
 
   <script>

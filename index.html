@@ -364,6 +364,31 @@
       transform: translateY(-2px);
     }
 
+    .btn-wa-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #25D366;
+      color: #fff;
+      padding: 16px 36px;
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+      box-shadow: 0 0 30px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-wa-hero:hover {
+      background: #1ebe5a;
+      box-shadow: 0 0 50px rgba(37, 211, 102, 0.55);
+      transform: translateY(-2px);
+    }
+
     .btn-ghost {
       display: inline-flex;
       align-items: center;
@@ -1664,9 +1689,14 @@
         padding: 14px 20px;
       }
 
-      .nav-links,
-      nav .nav-cta {
+      .nav-links {
         display: none;
+      }
+
+      nav .nav-cta {
+        font-size: 10px;
+        padding: 8px 14px;
+        letter-spacing: 0.5px;
       }
 
       .nav-toggle {
@@ -1797,9 +1827,18 @@
         padding: 116px 20px 10px;
       }
 
-      .hero-btns .btn-main {
+      .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-btns .btn-main,
+      .hero-btns .btn-wa-hero {
         width: 100%;
         justify-content: center;
+        clip-path: none;
+        border-radius: 4px;
+        padding: 16px 24px;
       }
 
       .hero-stats {
@@ -1955,29 +1994,13 @@
         trouble — tap once and we're on it. Available 24/7.
       </p>
       <div class="hero-btns">
-        <!-- WhatsApp emergency CTA -->
-        <div onclick="waContact()" style="
-          cursor:pointer; display:flex; align-items:center; gap:14px;
-          background:rgba(37,211,102,0.08); border:1px solid rgba(37,211,102,0.3);
-          padding:14px 20px; border-radius:4px;
-          transition: background 0.2s, border-color 0.2s;
-        " onmouseenter="this.style.background='rgba(37,211,102,0.14)';this.style.borderColor='rgba(37,211,102,0.6)'"
-           onmouseleave="this.style.background='rgba(37,211,102,0.08)';this.style.borderColor='rgba(37,211,102,0.3)'">
-          <div style="
-            width:44px; height:44px; background:#25D366; border-radius:50%; flex-shrink:0;
-            display:flex; align-items:center; justify-content:center;
-            box-shadow: 0 0 0 6px rgba(37,211,102,0.12);
-            animation: wa-pulse 2.5s ease-in-out infinite;
-          ">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.55 4.095 1.512 5.818L0 24l6.337-1.487A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.001-1.365l-.358-.213-3.762.883.948-3.667-.234-.376A9.818 9.818 0 1 1 12 21.818z"/>
-            </svg>
-          </div>
-          <div>
-            <div style="font-family:'Space Mono',monospace; font-size:12px; color:#25D366; letter-spacing:0.5px; margin-bottom:3px;">GET HELP NOW</div>
-            <div style="font-family:'Inter',sans-serif; font-size:11px; color:var(--muted); line-height:1.4;">Tap → we get your location → nearest mechanic dispatched</div>
-          </div>
+        <!-- WhatsApp emergency CTA — matches btn-main slant style -->
+        <div onclick="waContact()" class="btn-wa-hero">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.55 4.095 1.512 5.818L0 24l6.337-1.487A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.001-1.365l-.358-.213-3.762.883.948-3.667-.234-.376A9.818 9.818 0 1 1 12 21.818z"/>
+          </svg>
+          Get Help Now
         </div>
 
         <a href="#how" class="btn-main">
@@ -1986,6 +2009,13 @@
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
+
+         <!-- <a href="#how" class="btn-main">
+          See how it works
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a> -->
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -2078,6 +2108,70 @@
       <span class="ticker-item">VERIFIED MECHANICS <span class="ticker-dot"></span></span>
     </div>
   </div>
+
+  <!-- ── WHATSAPP SOS SECTION ──────────────────────────── -->
+  <section id="sos" style="background: var(--s2); border-bottom: 1px solid rgba(37,211,102,0.18); padding: 72px 56px;">
+    <div class="inner">
+      <div style="display:grid; grid-template-columns:1fr auto; gap:48px; align-items:center;">
+        <!-- Left: copy -->
+        <div>
+          <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:2.5px; color:#25D366; margin-bottom:18px; text-transform:uppercase;">Broke Down? Need Help Now?</div>
+          <h2 style="font-family:'Space Mono',monospace; font-size:clamp(22px,3vw,34px); color:var(--text); margin:0 0 10px; line-height:1.15;">
+            ONE TAP &rarr;<br><span style="color:#25D366;">MECHANIC ON THE WAY</span>
+          </h2>
+          <p style="font-family:'Inter',sans-serif; font-size:15px; color:var(--muted); margin:0 0 32px; max-width:480px; line-height:1.7;">
+            Tap the WhatsApp button — we'll receive your live location and immediately connect you with the nearest available mechanic.
+          </p>
+          <!-- Steps -->
+          <div style="display:flex; gap:0; flex-wrap:wrap;">
+            <div style="display:flex; align-items:flex-start; gap:12px; padding-right:32px; border-right:1px solid var(--dim); margin-right:32px; margin-bottom:16px;">
+              <span style="font-family:'Space Mono',monospace; font-size:18px; font-weight:700; color:#25D366; line-height:1;">01</span>
+              <div>
+                <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:1px; color:var(--text); margin-bottom:4px;">TAP THE BUTTON</div>
+                <div style="font-family:'Inter',sans-serif; font-size:12px; color:var(--muted);">We request your GPS location</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:12px; padding-right:32px; border-right:1px solid var(--dim); margin-right:32px; margin-bottom:16px;">
+              <span style="font-family:'Space Mono',monospace; font-size:18px; font-weight:700; color:#25D366; line-height:1;">02</span>
+              <div>
+                <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:1px; color:var(--text); margin-bottom:4px;">LOCATION SHARED</div>
+                <div style="font-family:'Inter',sans-serif; font-size:12px; color:var(--muted);">Your pin is sent to our team via WhatsApp</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:12px; margin-bottom:16px;">
+              <span style="font-family:'Space Mono',monospace; font-size:18px; font-weight:700; color:#25D366; line-height:1;">03</span>
+              <div>
+                <div style="font-family:'Space Mono',monospace; font-size:10px; letter-spacing:1px; color:var(--text); margin-bottom:4px;">MECHANIC DISPATCHED</div>
+                <div style="font-family:'Inter',sans-serif; font-size:12px; color:var(--muted);">We call you with the nearest mechanic</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: WA CTA -->
+        <div onclick="waContact()" style="cursor:pointer; display:flex; flex-direction:column; align-items:center; gap:14px; flex-shrink:0;">
+          <div style="
+            width:84px; height:84px; background:#25D366; border-radius:50%;
+            display:flex; align-items:center; justify-content:center;
+            box-shadow: 0 0 0 14px rgba(37,211,102,0.08), 0 0 0 28px rgba(37,211,102,0.04);
+            animation: wa-pulse 2.5s ease-in-out infinite;
+            transition: transform 0.2s;
+          " onmouseenter="this.style.transform='scale(1.08)'" onmouseleave="this.style.transform='scale(1)'">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="white">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.55 4.095 1.512 5.818L0 24l6.337-1.487A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.001-1.365l-.358-.213-3.762.883.948-3.667-.234-.376A9.818 9.818 0 1 1 12 21.818z"/>
+            </svg>
+          </div>
+          <span style="font-family:'Space Mono',monospace; font-size:9px; letter-spacing:2px; color:#25D366; text-align:center; text-transform:uppercase;">Tap for Help</span>
+        </div>
+      </div>
+    </div>
+    <style>
+      @media (max-width: 680px) {
+        #sos > .inner > div { grid-template-columns: 1fr !important; }
+        #sos > .inner > div > div:last-child { display: none !important; }
+      }
+    </style>
+  </section>
 
   <!-- ── HOW IT WORKS ───────────────────────────────────── -->
   <section style="background: var(--s1);" id="how">
